@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Quiz_user_view">
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="63dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_height="100dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:inputType="number" />
+        android:ems="10"
+        android:inputType="number"
+        app:layout_anchor="@+id/editText"
+        app:layout_anchorGravity="bottom|center" />
 
     <TextView
         android:id="@+id/id_quiz"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_anchor="@+id/id_quiz"
+        app:layout_anchorGravity="bottom|center" />
+
+    <RadioGroup
+        android:layout_width="220dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="TextView" />
-</LinearLayout>
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp">
+
+        <RadioButton
+            android:id="@+id/id_ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans1" />
+
+        <RadioButton
+            android:id="@+id/id_ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-30dp"
+            android:text="@string/ans2" />
+    </RadioGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
