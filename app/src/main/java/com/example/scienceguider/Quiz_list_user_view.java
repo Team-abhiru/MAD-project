@@ -15,8 +15,10 @@ public class Quiz_list_user_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list_user_view);
 
-        String questions [] = {"question 1", "question 2", "question 3"};
+        //create an array to use as data set
+        String questions [] = {"Question 1", "Question 2", "Question 3", "Question 4", "Question 5"};
 
+        //Use array adapter to create a list
         ArrayAdapter arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_quiz_user_view, R.id.id_quiz,questions);
 
         listView = findViewById(R.id.id_quiz_list);

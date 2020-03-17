@@ -5,23 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="63dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_anchor="@+id/editText"
-        app:layout_anchorGravity="bottom|center" />
-
     <TextView
         android:id="@+id/id_quiz"
-        android:layout_width="300dp"
+        android:layout_width="400dp"
         android:layout_height="51dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
         android:text="TextView"
         app:layout_anchor="@+id/id_quiz"
         app:layout_anchorGravity="bottom|center" />
@@ -29,7 +18,7 @@
     <RadioGroup
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="70dp">
 
         <RadioButton
@@ -43,16 +32,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="-30dp"
+            android:layout_marginTop="-32dp"
             android:text="@string/ans2" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="20dp"
+        <RadioButton
+            android:id="@+id/id_ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="-20dp"
-            android:text="Button" />
+            android:layout_marginTop="-33dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/ans3"/>
+
     </RadioGroup>
+
+    <Button
+        android:id="@+id/id_btn_ans_submit"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimary"
+        android:padding="1dp"
+        android:shadowColor="@color/colorPrimary"
+        android:text="@string/btn_ans_submit"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
