@@ -27,9 +27,9 @@
         app:layout_anchorGravity="bottom|center" />
 
     <RadioGroup
-        android:layout_width="220dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="70dp">
 
         <RadioButton
@@ -42,9 +42,17 @@
             android:id="@+id/id_ans2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="-30dp"
             android:text="@string/ans2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-20"
+            android:text="Button" />
     </RadioGroup>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
