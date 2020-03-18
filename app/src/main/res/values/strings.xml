@@ -7,4 +7,6 @@
     <string name="topic_adminPanel">Admin Panel</string>
     <string name="btn_add_question">Add new Question</string>
     <string name="btn_show_questions">Show Questions</string>
+    <string name="btn_usersList">Show Users</string>
+    <string name="btn_show_feedback">Show Feedbacks</string>
 </resources>
