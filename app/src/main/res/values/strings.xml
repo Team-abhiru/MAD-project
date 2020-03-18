@@ -8,5 +8,6 @@
     <string name="btn_add_question">Add new Question</string>
     <string name="btn_show_questions">Show Questions</string>
     <string name="btn_usersList">Show Users</string>
-    <string name="btn_show_feedback">Show Feedbacks</string>
+    <string name="btn_show_feedback">Show Feedback</string>
+    <string name="btn_add_subject_materials">Add Materials</string>
 </resources>
