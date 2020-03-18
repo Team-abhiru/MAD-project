@@ -12,6 +12,10 @@
     <string name="btn_add_subject_materials">Add Materials</string>
     <string name="topic_add_question">Add Question</string>
     <string name="topic_quiz_list">Questions</string>
+    <string name="topic_quiz_user_view">Quiz Time</string>
+    <string name="correct_ans">Marks : 0/5</string>
+    <string name="quiz_subject">Physics</string>
+    <string name="quiz_topic">Electricity</string>
 
     <string-array name="subject_list" >
         <item>Subject</item>
