@@ -11,7 +11,7 @@
         android:layout_width="381dp"
         android:layout_height="47dp"
         android:layout_marginTop="8dp"
-        android:background="#E91BF1"
+        android:background="#B90C81"
         android:fontFamily="casual"
         android:text="@string/topic_adminPanel"
         android:textAlignment="center"
