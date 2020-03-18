@@ -17,6 +17,7 @@
     <string name="quiz_subject">Physics</string>
     <string name="quiz_topic">Electricity</string>
     <string name="topic_add_questions">Add Questions</string>
+    <string name="btn_browse">Browse</string>
 
     <string-array name="subject_list">
         <item>Subject</item>

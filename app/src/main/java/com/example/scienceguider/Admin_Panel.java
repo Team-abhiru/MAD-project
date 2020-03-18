@@ -35,6 +35,15 @@ public class Admin_Panel extends AppCompatActivity {
             }
         });
 
+        addNewQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Admin_Panel.this,Add_new_Quiz.class);
+
+                startActivity(intent);
+            }
+        });
 
     }
 }
