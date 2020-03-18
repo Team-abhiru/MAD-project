@@ -7,10 +7,10 @@
 
     <TextView
         android:id="@+id/id_quiz_user"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="51dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
         android:text="TextView"
         app:layout_anchor="@+id/id_quiz_user"
         app:layout_anchorGravity="bottom|center" />
@@ -50,7 +50,7 @@
         android:id="@+id/id_btn_ans_submit"
         android:layout_width="50dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="310dp"
+        android:layout_marginLeft="300dp"
         android:layout_marginTop="70dp"
         android:background="@color/colorPrimary"
         android:padding="1dp"
