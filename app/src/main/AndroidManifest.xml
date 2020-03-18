@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin_Panel"></activity>
+        <activity android:name=".quiz_list_admin_view"></activity>
+        <activity android:name=".Admin_Panel" />
         <activity android:name=".Quiz_list_user_view">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
