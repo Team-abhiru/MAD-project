@@ -20,7 +20,10 @@
     <string name="MatTopic">Topic</string>
     <string name="MatSub">Subject</string>
     <string name="Mat">Materials</string>
-    <string name="non"/>
+    <string name="non" />
     <string name="add">Add</string>
     <string name="cont">Content</string>
+    <string name="ShowMatShow">Structure and Functions</string>
+    <string name="content">Content</string>
+
 </resources>

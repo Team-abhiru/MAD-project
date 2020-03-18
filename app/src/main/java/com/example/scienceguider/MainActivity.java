@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button button1;
     Button button2;
     Button button3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
-             public void onClick(View v) {
+            public void onClick(View v) {
                 openPhysicsActivity();
-             }
+            }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -38,14 +39,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     public void openBiologyActivity() {
         Intent intent = new Intent(this, BiologyActivity.class);
         startActivity(intent);
     }
+
     public void openPhysicsActivity() {
         Intent intent = new Intent(this, PhysicsActivity.class);
         startActivity(intent);
     }
+
     public void openBChemistryActivity() {
         Intent intent = new Intent(this, ChemistryActivity.class);
         startActivity(intent);
@@ -54,5 +58,12 @@ public class MainActivity extends AppCompatActivity {
     public void AddMaterials(View view) {
         Intent intent = new Intent(this, AddMaterials.class);
         startActivity(intent);
+
+    }
+
+    public void ShowMat(View view) {
+        Intent intent = new Intent(this, ShowMaterials.class);
+        startActivity(intent);
+
     }
 }

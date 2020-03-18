@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddMaterials"></activity>
+        <activity android:name=".ShowMaterials"></activity>
+        <activity android:name=".AddMaterials" />
         <activity android:name=".BiologyActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
