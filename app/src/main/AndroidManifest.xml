@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".quiz_list_admin_view"></activity>
-        <activity android:name=".Admin_Panel" />
-        <activity android:name=".Quiz_list_user_view">
+        <activity android:name=".Quiz_list_admin_view">
+
+        </activity>
+        <activity android:name=".Admin_Panel" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Quiz_list_user_view">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>
