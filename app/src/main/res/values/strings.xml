@@ -3,7 +3,7 @@
     <string name="Button">Biology</string>
     <string name="btnPhy">Physics</string>
     <string name="btnChe">Chemistry</string>
-    <string name="HomeHead">Science Guider</string>
+    <string name="HomeHead">Subjects</string>
     <string name="title_activity_biology">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -13,13 +13,14 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="phyHd">Physics</string>
-    <string name="cheHd">Chemistry</string>
-    <string name="bioHd">Biology</string>
+    <string name="phyHd">Physics Materials</string>
+    <string name="cheHd">Chemistry Materials</string>
+    <string name="bioHd">Biology Materials</string>
     <string name="addMa">Add Materials</string>
     <string name="MatTopic">Topic</string>
     <string name="MatSub">Subject</string>
-    <string name="non" />
+    <string name="Mat">Materials</string>
+    <string name="non"/>
     <string name="add">Add</string>
     <string name="cont">Content</string>
 </resources>

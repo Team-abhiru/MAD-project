@@ -13,8 +13,8 @@
 
     <Button
         android:id="@+id/btnBio"
-        android:layout_width="439dp"
-        android:layout_height="143dp"
+        android:layout_width="413dp"
+        android:layout_height="140dp"
         android:background="#F7429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
@@ -31,8 +31,8 @@
 
     <Button
         android:id="@+id/btnPhy"
-        android:layout_width="435dp"
-        android:layout_height="143dp"
+        android:layout_width="413dp"
+        android:layout_height="140dp"
         android:background="#EEB53A3A"
         android:text="@string/btnPhy"
         android:textColor="#FFFFFF"
@@ -47,8 +47,8 @@
 
     <Button
         android:id="@+id/btnChe"
-        android:layout_width="441dp"
-        android:layout_height="143dp"
+        android:layout_width="413dp"
+        android:layout_height="140dp"
         android:background="#F71C2E65"
         android:text="@string/btnChe"
         android:textColor="#FFFFFF"
@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/HomeHeader"
-        android:layout_width="216dp"
-        android:layout_height="25dp"
+        android:layout_width="225dp"
+        android:layout_height="33dp"
         android:background="#FFFFFF"
         android:freezesText="false"
         android:text="@string/HomeHead"
@@ -72,7 +72,7 @@
         android:textAllCaps="true"
         android:textColor="#000000"
         android:textIsSelectable="true"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

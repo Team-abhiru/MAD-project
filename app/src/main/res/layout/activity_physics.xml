@@ -29,12 +29,28 @@
             android:layout_height="wrap_content"
             android:text="@string/phyHd"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.022" />
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="621dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Searchbar"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ListView
+                android:id="@+id/phyListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D5FFFFFF" />
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
