@@ -13,11 +13,12 @@
     <string name="topic_add_question">Add Question</string>
     <string name="topic_quiz_list">Questions</string>
     <string name="topic_quiz_user_view">Quiz Time</string>
-    <string name="correct_ans">Marks : 0/5</string>
+    <string name="correct_ans">Marks : 0/4</string>
     <string name="quiz_subject">Physics</string>
     <string name="quiz_topic">Electricity</string>
+    <string name="topic_add_questions">Add Questions</string>
 
-    <string-array name="subject_list" >
+    <string-array name="subject_list">
         <item>Subject</item>
         <item>Biology</item>
         <item>Physics</item>
