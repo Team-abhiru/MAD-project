@@ -9,19 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel">
+
+        <activity android:name=".Feedback_confirm">
+        <activity android:name=".ShowMaterials"></activity>
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".BiologyActivity" />
+        <activity android:name=".ChemistryActivity" />
+        <activity android:name=".PhysicsActivity" />
+        <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Quiz_list_user_view">
 
         </activity>
         <activity android:name=".MainActivity" />
+
+        <activity android:name=".Feedback_write"></activity>
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".BiologyActivity" />
+        <activity android:name=".ChemistryActivity" />
+        <activity android:name=".PhysicsActivity" />
+        <activity android:name=".MainActivity"></activity>
+
     </application>
 
 </manifest>
