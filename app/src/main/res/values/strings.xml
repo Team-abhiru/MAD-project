@@ -35,4 +35,7 @@
     <string name="btn_view_feedback">View Feedback</string>
     <string name="btn_edit_feedback">Edit Feedback</string>
     <string name="btn_delete_feedback">Delete Feedback</string>
+    <string name="ShowMatShow">Structure and Functions</string>
+    <string name="content">Content</string>
+
 </resources>

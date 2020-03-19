@@ -15,7 +15,7 @@
         android:id="@+id/btnBio"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:background="#F7429E45"
+        android:background="#FC429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
         android:textDirection="firstStrongRtl"
@@ -33,7 +33,7 @@
         android:id="@+id/btnPhy"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:background="#EEB53A3A"
+        android:background="#FCB53A3A"
         android:text="@string/btnPhy"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
@@ -49,7 +49,7 @@
         android:id="@+id/btnChe"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:background="#F71C2E65"
+        android:background="#FC1C2E65"
         android:text="@string/btnChe"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
@@ -85,13 +85,25 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add"
         android:onClick="AddMaterials"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChe"
         tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/showmat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:onClick="ShowMat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/btnChe" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

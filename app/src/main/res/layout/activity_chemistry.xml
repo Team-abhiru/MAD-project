@@ -18,39 +18,37 @@
             android:layout_height="wrap_content"
             android:text="@string/cheHd"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.022" />
-
-        <SearchView
-            android:id="@+id/Searchbar"
-            android:layout_width="323dp"
-            android:layout_height="33dp"
-            android:background="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.078" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RelativeLayout
-            android:layout_width="411dp"
-            android:layout_height="621dp"
+            android:id="@+id/relativeLayout2"
+            android:layout_width="412dp"
+            android:layout_height="643dp"
+            android:background="#D5FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Searchbar"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.97">
 
             <ListView
                 android:id="@+id/phyListView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#D5FFFFFF" />
+                android:layout_width="wrap_content"
+                android:layout_height="621dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginBottom="0dp" />
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
