@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".Login"></activity>
+
+
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel">
@@ -20,6 +23,7 @@
         <activity android:name=".BiologyActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
+
         <activity android:name=".MainActivity">
 
             <intent-filter>
