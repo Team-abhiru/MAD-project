@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Feedback_confirm">
         <activity android:name=".ShowMaterials"></activity>
         <activity android:name=".AddMaterials" />
         <activity android:name=".BiologyActivity" />
@@ -21,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Feedback_write"></activity>
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".BiologyActivity" />
+        <activity android:name=".ChemistryActivity" />
+        <activity android:name=".PhysicsActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
