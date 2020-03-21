@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".View">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B90C81"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="List of Users"
+        android:fontFamily="casual"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="20dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginRight="10dp"
+           android:textColor="#272526"
+           android:textSize="30sp"
+           android:text="1"
+           android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="User ID"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="email"
+            android:fontFamily="sans-serif"/>
+        
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/update"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="2"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="User ID"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="email"
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/update"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="3"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="User ID"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="email"
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/update"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="4"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="User ID"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#272526"
+            android:textSize="30sp"
+            android:text="email"
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/update"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete"/>
+
+    </LinearLayout>
+</LinearLayout>
