@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".View"></activity>
         <activity android:name=".Reset"></activity>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".RegisterActivity"/>
         <activity android:name=".Login"></activity>
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
