@@ -11,16 +11,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
         android:background="#B90C81"
+        android:fontFamily="casual"
         android:gravity="center"
         android:padding="10dp"
         android:text="List of Users"
-        android:fontFamily="casual"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:textColor="#fff"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,10 +46,10 @@
             android:layout_marginLeft="3dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/user_id"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="User ID"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -56,10 +57,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/prompt_email"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="email"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
         
         <ImageView
             android:layout_width="32dp"
@@ -102,10 +103,10 @@
             android:layout_marginLeft="3dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/user_id"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="User ID"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -113,10 +114,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/prompt_email"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="email"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <ImageView
             android:layout_width="32dp"
@@ -159,10 +160,10 @@
             android:layout_marginLeft="3dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/user_id"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="User ID"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -170,10 +171,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/prompt_email"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="email"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <ImageView
             android:layout_width="32dp"
@@ -216,10 +217,10 @@
             android:layout_marginLeft="3dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/user_id"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="User ID"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -227,10 +228,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/prompt_email"
             android:textColor="#272526"
-            android:textSize="30sp"
-            android:text="email"
-            android:fontFamily="sans-serif"/>
+            android:textSize="30sp" />
 
         <ImageView
             android:layout_width="32dp"
