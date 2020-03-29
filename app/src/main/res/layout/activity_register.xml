@@ -18,7 +18,7 @@
         android:fontFamily="casual"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Registration Form"
+        android:text="@string/topic_registration_form"
         android:textColor="#fff"
         android:textSize="24dp" />
 
@@ -32,7 +32,7 @@
         android:inputType="text"
         android:gravity="left"
         android:drawableLeft="@drawable/username"
-        android:hint="Username"
+        android:hint="@string/hint_username"
         android:maxLines="1"  />
 
     <EditText
@@ -43,7 +43,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:gravity="left"
-        android:hint="Full Name"
+        android:hint="@string/hint_full_name"
         android:inputType="text"
         android:drawableLeft="@drawable/name"
         android:maxLines="1"  />
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/email"
         android:gravity="left"
-        android:hint="E-mail"
+        android:hint="@string/hint_e_mail"
         android:inputType="textEmailAddress"
         android:drawableLeft="@drawable/email"
         android:layout_marginLeft="20dp"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/school"
         android:gravity="left"
-        android:hint="School"
+        android:hint="@string/hint_school"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:inputType="text"
@@ -80,8 +80,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/password"
         android:gravity="left"
-        android:hint="Password"
-        android:drawableLeft="@drawable/password"
+        android:hint="@string/hint_password"
+        android:drawableStart="@drawable/password"
         android:inputType="textPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -100,7 +100,7 @@
         android:layout_weight="1"
         android:layout_marginRight="75dp"
         android:layout_marginLeft="75dp"
-        android:text="Register"
+        android:text="@string/btn_register"
         android:background="#F7DE63"/>
 
     </LinearLayout>

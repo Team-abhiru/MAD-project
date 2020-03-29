@@ -25,8 +25,8 @@
 
     <Button
         android:id="@+id/btn_add_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="72dp"
         android:background="@android:color/holo_green_dark"
         android:fontFamily="serif"
@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/btn_show_question"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@android:color/holo_green_dark"
@@ -57,8 +57,8 @@
 
     <Button
         android:id="@+id/btn_show_users"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:background="@android:color/holo_green_dark"
         android:fontFamily="serif"
@@ -73,8 +73,8 @@
 
     <Button
         android:id="@+id/btn_show_feedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:background="@android:color/holo_green_dark"
         android:fontFamily="serif"
@@ -89,12 +89,12 @@
 
     <Button
         android:id="@+id/btn_add_material"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        android:padding="3dp"
         android:background="@android:color/holo_green_dark"
         android:fontFamily="serif"
+        android:padding="3dp"
         android:text="@string/btn_add_subject_materials"
         android:textAllCaps="false"
         android:textColor="@color/cardview_light_background"
