@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "460602062730",
+    "firebase_url": "https://mad-project-daa7e.firebaseio.com",
+    "project_id": "mad-project-daa7e",
+    "storage_bucket": "mad-project-daa7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460602062730:android:1ea294b9fe61c39290ba73",
+        "android_client_info": {
+          "package_name": "com.example.scienceguider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460602062730-oeqndas3vellpisd3hub5e8t5cilikps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scienceguider",
+            "certificate_hash": "a8633143baae3d1f899a1e528462eb9c1d53889a"
+          }
+        },
+        {
+          "client_id": "460602062730-equafgv33ql3l3buj7ro4tcutkoqsmct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUKlcJgwCjeZEecW29anZmGddhPtOK8Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460602062730-equafgv33ql3l3buj7ro4tcutkoqsmct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -29,8 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity >
-        <activity android:name=".Login">
-          </activity>
+
         <activity android:name=".Quiz_list_user_view"/>
         <activity android:name=".Feedback_write"></activity>
 
