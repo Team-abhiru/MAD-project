@@ -92,6 +92,7 @@
     <string name="attempt_quiz">Attempt Quiz</string>
     <string name="admin_quiz">Admin quiz view</string>
     <string name="counter">00:30</string>
+    <string name="hint_write_question">Write question here</string>
 
 
 </resources>
