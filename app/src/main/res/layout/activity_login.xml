@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Login">
@@ -23,77 +24,69 @@
         android:textSize="24dp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/logo" />
+
     <EditText
         android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
         android:drawableLeft="@drawable/username"
-        android:gravity="left"
         android:hint="@string/hint_username"
         android:inputType="text"
         android:maxLines="1" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
         android:drawableLeft="@drawable/password"
-        android:gravity="left"
         android:hint="@string/hint_password"
+        android:background="#ffffff"
         android:inputType="textPassword"
         android:maxLines="1" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/login"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="2dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:background="#F7DE63"
             android:text="@string/btn_login" />
 
-        <Button
-            android:id="@+id/register"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="#F7DE63"
-            android:text="@string/btn_register" />
-
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/reset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginRight="110dp"
-            android:layout_weight="1"
-            android:background="#F7DE63"
-            android:gravity="center"
-            android:text="@string/btn_reset_password" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#FF9800"
+            android:text="@string/not_registered" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#F03030"
+            android:paddingLeft="7dp"
+            android:textStyle="bold"
+            android:text="@string/register" />
 
     </LinearLayout>
 

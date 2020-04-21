@@ -11,8 +11,13 @@
         android:theme="@style/AppTheme">
         <activity android:name=".View"></activity>
         <activity android:name=".Reset"></activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".Login"></activity>
+        <activity android:name=".RegisterActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Login"/>
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel"/>
@@ -23,13 +28,7 @@
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity >
-
         <activity android:name=".Quiz_list_user_view"/>
         <activity android:name=".Feedback_write"></activity>
 
