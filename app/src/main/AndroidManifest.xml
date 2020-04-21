@@ -16,10 +16,8 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        </activity>>
-        <activity android:name=".Login">
-
         </activity>
+        <activity android:name=".Login"/>
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel"/>
