@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
     android:background="@drawable/maths"
     android:fadeScrollbars="true"
     android:hapticFeedbackEnabled="false"
     android:scrollbarFadeDuration="200"
-    app:layout_constraintBaseline_creator="@android:integer/config_mediumAnimTime"
-    tools:context=".MainActivity">
+    app:layout_constraintBaseline_creator="@android:integer/config_mediumAnimTime" >
 
     <Button
         android:id="@+id/btnBio"
@@ -107,3 +108,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

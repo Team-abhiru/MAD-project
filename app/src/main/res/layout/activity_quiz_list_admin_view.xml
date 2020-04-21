@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_list_admin_view">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="#B90C81"
+        android:fontFamily="casual"
+        android:text="@string/topic_quiz_list"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/id_quiz_list_admin"
+        android:layout_width="400dp"
+        android:layout_height="465dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="1dp"
+        android:background="#31918D8D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552">
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/id_subject_list"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/subject_list"
+        android:popupBackground="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/id_topic_list"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/id_topic_list"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/topics"
+        android:popupBackground="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/id_subject_list"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
