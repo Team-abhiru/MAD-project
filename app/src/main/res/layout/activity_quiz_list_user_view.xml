@@ -37,43 +37,41 @@
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:layout_below="@id/divider"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="120dp"
         android:background="@android:color/holo_orange_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         />
 
     <TextView
+        android:id="@+id/id_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_score"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/quiz_subject"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/id_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/divider"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="40dp"
         android:text="@string/correct_ans"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/id_subject"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/quiz_subject"
-        android:layout_marginStart="40dp"
-        android:layout_below="@id/id_score"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/id_subject_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quiz_topic"
+        android:text="@string/quiz_number"
         android:textSize="20sp"
-        android:layout_below="@id/divider"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_subject"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
          />
     <TextView
         android:id="@+id/id_counter"

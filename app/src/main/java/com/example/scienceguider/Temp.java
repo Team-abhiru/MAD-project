@@ -50,11 +50,10 @@ public class Temp extends AppCompatActivity {
     }
 
     private void showQuizzes() {
-        startActivity(new Intent(Temp.this,Quiz_list_user_view.class));
+        startActivity(new Intent(Temp.this,Quiz_list_admin_view.class));
     }
 
     private void attemptQuiz() {
-
         startActivity(new Intent(Temp.this,Quiz_list_user_view.class));
     }
 }

@@ -1,16 +1,19 @@
 package com.example.scienceguider;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.google.firebase.firestore.FirebaseFirestore;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -31,12 +34,14 @@ public class Quiz_list_user_view extends AppCompatActivity {
     private int countdown;
 
     private List<Question> questionList;
+    DatabaseReference refDB;
 
-    FirebaseFirestore firestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list_user_view);
+
+        refDB = FirebaseDatabase.getInstance().getReference("Questions");
 
         question = (TextView) findViewById(R.id.id_question);
         marks = (TextView) findViewById(R.id.id_score);
@@ -51,6 +56,25 @@ public class Quiz_list_user_view extends AppCompatActivity {
 
         confirm = (Button) findViewById(R.id.id_btn_confirm);
 
-        firestore = FirebaseFirestore.getInstance();
+        refDB.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Question question = null;
+                question = dataSnapshot.getValue(Question.class);
+
+                question.setQuestion(question.getQuestion());
+                for(DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    System.out.println(question.getQuestion());
+                    System.out.println(question.getOption1());
+                    System.out.println(question.getOption3());
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                System.out.println("Error");
+            }
+        });
     }
 }

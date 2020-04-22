@@ -16,9 +16,9 @@
     <string name="topic_quiz_user_view">Quiz Time</string>
     <string name="correct_ans">Marks : 0/4</string>
     <string name="quiz_subject">Physics</string>
-    <string name="quiz_topic">Electricity</string>
+    <string name="quiz_number">Question : 01</string>
     <string name="topic_add_questions">Add Questions</string>
-    <string name="btn_browse">Browse</string>
+    <string name="btn_save">Save</string>
 
     <string-array name="subject_list">
         <item>Subject</item>
@@ -90,6 +90,11 @@
     <string name="attempt_quiz">Attemp quiz</string>
     <string name="admin_quiz">Admin quiz</string>
     <string name="hint_write_question">Write question here</string>
+    <string name="not_registered">Not registerd</string>
+    <string name="register">Register</string>
+    <string name="counter">00:30</string>
+    <string name="select_subject">Select subject</string>
+    <string name="select_topic">Select topic</string>
 
 
 </resources>
