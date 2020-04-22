@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -22,84 +23,78 @@
         android:textColor="#fff"
         android:textSize="24dp" />
 
-    <EditText
-        android:layout_marginTop="28dp"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:id="@+id/username"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:background="#ffffff"
         android:inputType="text"
-        android:gravity="left"
         android:drawableLeft="@drawable/username"
         android:hint="@string/hint_username"
         android:maxLines="1"  />
 
     <EditText
         android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:id="@+id/name"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="left"
         android:hint="@string/hint_full_name"
+        android:background="#ffffff"
         android:inputType="text"
         android:drawableLeft="@drawable/name"
         android:maxLines="1"  />
 
     <EditText
         android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:id="@+id/email"
-        android:gravity="left"
         android:hint="@string/hint_e_mail"
+        android:background="#ffffff"
         android:inputType="textEmailAddress"
         android:drawableLeft="@drawable/email"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:maxLines="1"  />
 
     <EditText
         android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:id="@+id/school"
-        android:gravity="left"
         android:hint="@string/hint_school"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:background="#ffffff"
         android:inputType="text"
         android:drawableLeft="@drawable/school"
         android:maxLines="1"  />
 
     <EditText
         android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:id="@+id/password"
-        android:gravity="left"
         android:hint="@string/hint_password"
+        android:background="#ffffff"
         android:drawableStart="@drawable/password"
         android:inputType="textPassword"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:maxLines="1"  />
 
     <LinearLayout
-        android:layout_marginTop="24dp"
-        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
     <Button
         android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
         android:layout_weight="1"
-        android:layout_marginRight="75dp"
-        android:layout_marginLeft="75dp"
         android:text="@string/btn_register"
         android:background="#F7DE63"/>
 
