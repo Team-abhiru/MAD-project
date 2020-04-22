@@ -87,6 +87,9 @@
     <string name="hint_confirm_Password">Confirm Password</string>
     <string name="btn_reset">Reset</string>
     <string name="user_id">User ID</string>
+    <string name="attempt_quiz">Attemp quiz</string>
+    <string name="admin_quiz">Admin quiz</string>
+    <string name="hint_write_question">Write question here</string>
 
 
 </resources>
