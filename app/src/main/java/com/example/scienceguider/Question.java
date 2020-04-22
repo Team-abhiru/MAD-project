@@ -7,16 +7,20 @@ public class Question {
     private String option1;
     private String option2;
     private String option3;
+    private String subject;
+    private String topic;
 
     public Question() {
     }
 
-    public Question(String question, int answer, String option1, String option2, String option3) {
+    public Question(String question, int answer, String option1, String option2, String option3, String subject, String topic) {
         this.question = question;
         this.answer = answer;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
+        this.subject = subject;
+        this.topic = topic;
     }
 
     public String getQuestion() {
@@ -57,5 +61,21 @@ public class Question {
 
     public void setOption3(String option3) {
         this.option3 = option3;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
     }
 }
