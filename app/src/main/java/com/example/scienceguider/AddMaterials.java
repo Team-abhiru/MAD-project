@@ -37,7 +37,6 @@ public class AddMaterials extends AppCompatActivity {
     private Button upload;
     private TextView add_notification;
     private Spinner subject;
-//    Spinner spinner_subject;
 
     StorageReference storageReference;
     DatabaseReference databaseReference;
