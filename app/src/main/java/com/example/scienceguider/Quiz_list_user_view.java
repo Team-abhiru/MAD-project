@@ -3,6 +3,7 @@ package com.example.scienceguider;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,14 +23,16 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Quiz_list_user_view extends AppCompatActivity {
+    private static final long COUNT_DOWN_TIME = 30000;
 
-    private TextView question;
-    private TextView marks;
-    private TextView subject;
-    private TextView quesNumber;
-    private TextView counter;
+    private TextView textView_question;
+    private TextView textView_marks;
+    private TextView textView_subject;
+    private TextView textView_quesNumber;
+    private TextView textView_counter;
     private RadioGroup radioGroup;
     private RadioButton option1, option2, option3;
     private Button confirm;
@@ -37,13 +40,17 @@ public class Quiz_list_user_view extends AppCompatActivity {
     private int questionsCount = 0;
     private int questionNum = 0;
     private int score;
-    private int countdown;
+    private long countdown;
 
     private ColorStateList defaultColor;
+    private ColorStateList defaultColorCD;
+
+    private CountDownTimer countDownTimer;
     private Question currQues;
     private Question questionArray = null;
     private Boolean answered;
     private List<Question> questionList;
+
     private DatabaseReference refDB;
 
     @Override
@@ -57,11 +64,11 @@ public class Quiz_list_user_view extends AppCompatActivity {
 
         questionList = new ArrayList<>();
 
-        question = (TextView) findViewById(R.id.id_question);
-        marks = (TextView) findViewById(R.id.id_score);
-        subject = (TextView) findViewById(R.id.id_subject);
-        quesNumber = (TextView) findViewById(R.id.id_question_number);
-        counter = (TextView) findViewById(R.id.id_counter);
+        textView_question = (TextView) findViewById(R.id.id_question);
+        textView_marks = (TextView) findViewById(R.id.id_score);
+        textView_subject = (TextView) findViewById(R.id.id_subject);
+        textView_quesNumber = (TextView) findViewById(R.id.id_question_number);
+        textView_counter = (TextView) findViewById(R.id.id_counter);
 
         radioGroup = (RadioGroup) findViewById(R.id.id_radio_group);
         option1 = (RadioButton) findViewById(R.id.id_answer1);
@@ -71,6 +78,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
         confirm = (Button) findViewById(R.id.id_btn_confirm);
 
         defaultColor = option1.getTextColors();
+        defaultColorCD = textView_counter.getHintTextColors();
 
         refDB.addValueEventListener(new ValueEventListener() {
 
@@ -92,16 +100,13 @@ public class Quiz_list_user_view extends AppCompatActivity {
                             if(option1.isChecked() || option2.isChecked() || option3.isChecked()){
                                 checkAnswer();
                             }else{
-                                Toast.makeText(Quiz_list_user_view.this,"Select a answer",Toast.LENGTH_SHORT);
+                                Toast.makeText(Quiz_list_user_view.this,"Select a answer",Toast.LENGTH_SHORT).show();
                             }
-
                         }else{
                             getQuestion();
-
                         }
                     }
                 });
-
             }
 
             @Override
@@ -122,7 +127,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.i("State","Resume");
-        question.setText("Hello");
+        textView_question.setText("Hello");
     }
 
     private void getQuestion(){
@@ -137,15 +142,17 @@ public class Quiz_list_user_view extends AppCompatActivity {
 
             currQues = questionList.get(questionNum);
 
-            question.setText(currQues.getQuestion());
+            textView_question.setText(currQues.getQuestion());
             option1.setText(currQues.getOption1());
             option2.setText(currQues.getOption2());
             option3.setText(currQues.getOption3());
 
             questionNum++;
-            quesNumber.setText("Question : " + questionNum);
+            textView_quesNumber.setText("Question : " + questionNum);
             answered = false;
             confirm.setText("Confirm Answer");
+            countdown = COUNT_DOWN_TIME;
+            startCountDown();
         }
         else{
             confirm.setText("Finish");
@@ -162,13 +169,15 @@ public class Quiz_list_user_view extends AppCompatActivity {
     private void checkAnswer(){
         answered = true;
 
+        countDownTimer.cancel();
+
         int answer = currQues.getAnswer();
         RadioButton givenAnsButton = findViewById(radioGroup.getCheckedRadioButtonId());
         int givenAns = radioGroup.indexOfChild(givenAnsButton) +1;
 
         if(givenAns == answer){
             score++;
-            marks.setText(("Marks : "+ score +"/"+questionsCount));
+            textView_marks.setText(("Marks : "+ score +"/"+questionsCount));
         }
 
         showSolution();
@@ -197,6 +206,46 @@ public class Quiz_list_user_view extends AppCompatActivity {
     }
     private void finishQuiz(){
         finish();
+    }
+
+    private void startCountDown(){
+
+        countDownTimer = new CountDownTimer(countdown,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                countdown = millisUntilFinished;
+                updateCountDown();
+            }
+
+            @Override
+            public void onFinish() {
+                countdown = 0;
+                updateCountDown();
+                checkAnswer();
+            }
+        }.start();
+    }
+
+    private void updateCountDown(){
+        int minute = (int) ((countdown / 1000)/60);
+        int second = (int) ((countdown/1000)%60);
+
+        String format = String.format(Locale.getDefault(),"%02d:%02d",minute,second);
+        textView_counter.setText(format);
+        System.out.println(countdown);
+        if(countdown < 10000){
+            textView_counter.setTextColor(Color.RED);
+        }else{
+            textView_counter.setTextColor(defaultColorCD);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(countDownTimer != null) {
+            countDownTimer.cancel();
+        }
     }
 }
 
