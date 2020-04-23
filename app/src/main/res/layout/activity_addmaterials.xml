@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".AddMaterials">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="413dp"
-        android:layout_height="55dp"
+        android:id="@+id/textView12"
+        android:layout_width="381dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         android:background="#B90C81"
         android:fontFamily="casual"
         android:text="@string/addMa"
@@ -18,7 +20,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,8 +69,8 @@
 
     <Button
         android:id="@+id/id_btn_browse"
-        android:layout_width="97dp"
-        android:layout_height="38dp"
+        android:layout_width="107dp"
+        android:layout_height="51dp"
         android:layout_marginEnd="152dp"
         android:text="@string/browse"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
@@ -89,17 +91,18 @@
 
     <Button
         android:id="@+id/upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="226dp"
         android:text="@string/upload"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_notification" />
+        app:layout_constraintTop_toBottomOf="@+id/add_notification"
+        app:layout_constraintVertical_bias="0.358" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -116,12 +119,13 @@
     <TextView
         android:id="@+id/add_notification"
         android:layout_width="0dp"
-        android:layout_height="19dp"
+        android:layout_height="25dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
         android:text="@string/no_file_notify"
         android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
