@@ -98,5 +98,7 @@
         <string name="register">REGISTER</string>
         <string name="attempt_quiz">Attempt Quiz</string>
         <string name="admin_quiz">Admin quiz view</string>
+    <string name="no_file_notify">File is not selected</string>
+    <string name="upload">UPLOAD</string>
 
 </resources>

@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.btnPhy);
         button3 = findViewById(R.id.btnChe);
 
+
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openBiologyActivity();
