@@ -14,9 +14,9 @@
     <string name="topic_add_question">Add Question</string>
     <string name="topic_quiz_list">Questions</string>
     <string name="topic_quiz_user_view">Quiz Time</string>
-    <string name="correct_ans">Marks : 0/4</string>
+    <string name="correct_ans">Marks : 0</string>
     <string name="quiz_subject">Physics</string>
-    <string name="quiz_number">Question : 01</string>
+    <string name="quiz_number">Question : 1</string>
     <string name="topic_add_questions">Add Questions</string>
     <string name="btn_save">Save</string>
 
