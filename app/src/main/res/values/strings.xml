@@ -65,6 +65,12 @@
         <string name="update">Update</string>
         <string name="browse">Browse</string>
 
+        <string-array name="subjects">
+                <item>Biology</item>
+                <item>Physics</item>
+                <item>Chemistry</item>
+        </string-array>
+
         <string name="topic_feedback_write">Place Your Feedback Here..</string>
         <string name="btn_send_feedback">Send Feedback</string>
         <string name="choose_subject">Subject</string>
@@ -100,5 +106,6 @@
         <string name="admin_quiz">Admin quiz view</string>
     <string name="no_file_notify">File is not selected</string>
     <string name="upload">UPLOAD</string>
+        <string name="material">"Material "</string>
 
 </resources>

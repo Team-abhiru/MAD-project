@@ -31,11 +31,12 @@ import java.util.Objects;
 
 public class AddMaterials extends AppCompatActivity {
 
-    EditText Tp_name;
-    Button id_btn_browse;
-    Uri pdfUri;
-    Button upload;
-    TextView add_notification;
+    private EditText Tp_name;
+    private Button id_btn_browse;
+    private Uri pdfUri;
+    private Button upload;
+    private TextView add_notification;
+    private Spinner subject;
 //    Spinner spinner_subject;
 
     StorageReference storageReference;
@@ -46,22 +47,23 @@ public class AddMaterials extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addmaterials);
 
-//        Spinner mySpinner = (Spinner) findViewById(R.id.spinner);
-//
-//        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(AddMaterials.this,
-//                android.R.layout.simple_list_item_1,getResources()
-//                .getStringArray(R.array.subjectArray));
-//        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        mySpinner.setAdapter(myAdapter);
+        subject = (Spinner) findViewById(R.id.spinner_subject);
+
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(AddMaterials.this,
+                android.R.layout.simple_list_item_1,getResources()
+                .getStringArray(R.array.subjects));
+        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        subject.setAdapter(myAdapter);
 
         Tp_name = findViewById(R.id.Tp_name);
         id_btn_browse = findViewById(R.id.id_btn_browse);
         upload = findViewById(R.id.upload);
-//        spinner_subject = findViewById(R.id.spinner_subject);
+
         add_notification = findViewById(R.id.add_notification);
 
         storageReference = FirebaseStorage.getInstance().getReference();
         databaseReference = FirebaseDatabase.getInstance().getReference("Materials");
+
 
         id_btn_browse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +129,9 @@ public class AddMaterials extends AppCompatActivity {
 
                 Uri url = uri.getResult();
 
-                PDF_Uploader uploader = new PDF_Uploader(Tp_name.getText().toString(), Tp_name.getText().toString(), url.toString());
+                String selected_subject = subject.getSelectedItem().toString();
+
+                PDF_Uploader uploader = new PDF_Uploader(Tp_name.getText().toString(),selected_subject, url.toString());
                 databaseReference.child(databaseReference.push().getKey()).setValue(uploader).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -143,8 +147,6 @@ public class AddMaterials extends AppCompatActivity {
                     }
                 });
 
-//                Toast.makeText(AddMaterials.this, "File Uploaded", Toast.LENGTH_SHORT).show();
-//                progressDialog.dismiss();
             }
 
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
