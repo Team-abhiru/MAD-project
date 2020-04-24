@@ -10,72 +10,46 @@
     <TextView
         android:id="@+id/MatID"
         android:layout_width="313dp"
-        android:layout_height="72dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
         android:text="@string/ShowMatShow"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
-        android:layout_width="396dp"
-        android:layout_height="635dp"
+        android:layout_width="414dp"
+        android:layout_height="0dp"
         android:background="#D5FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="603dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="-4dp"
-            android:text="@string/content" />
-
-    </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@+id/MatID" />
 
     <ImageView
         android:id="@+id/image_delete"
         android:layout_width="29dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_delete_black_24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/MatID"
         app:layout_constraintStart_toEndOf="@+id/MatID"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064"
         tools:ignore="MissingConstraints"></ImageView>
 
     <ImageView
         android:id="@+id/image_edit"
         android:layout_width="29dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_edit_black_24dp"
-        app:layout_constraintBottom_toTopOf="@+id/image_delete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/MatID"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592"
+        app:layout_constraintTop_toTopOf="@+id/MatID"
         tools:ignore="MissingConstraints"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
