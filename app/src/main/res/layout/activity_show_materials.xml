@@ -8,12 +8,14 @@
     tools:context=".ShowMaterials">
 
     <TextView
-        android:id="@+id/MatID"
+        android:id="@+id/showTp"
         android:layout_width="313dp"
         android:layout_height="82dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="@string/ShowMatShow"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -26,7 +28,22 @@
         android:layout_height="0dp"
         android:background="#D5FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MatID" />
+        app:layout_constraintTop_toBottomOf="@+id/showTp" >
+
+        <Button
+            android:id="@+id/pdfDownload"
+            android:layout_width="390dp"
+            android:layout_height="71dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="14dp"
+            android:text="Button"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/image_delete"
@@ -36,8 +53,8 @@
         android:layout_marginBottom="6dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_delete_black_24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/MatID"
-        app:layout_constraintStart_toEndOf="@+id/MatID"
+        app:layout_constraintBottom_toBottomOf="@+id/showTp"
+        app:layout_constraintStart_toEndOf="@+id/showTp"
         tools:ignore="MissingConstraints"></ImageView>
 
     <ImageView
@@ -48,8 +65,8 @@
         android:layout_marginTop="2dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_edit_black_24dp"
-        app:layout_constraintStart_toEndOf="@+id/MatID"
-        app:layout_constraintTop_toTopOf="@+id/MatID"
+        app:layout_constraintStart_toEndOf="@+id/showTp"
+        app:layout_constraintTop_toTopOf="@+id/showTp"
         tools:ignore="MissingConstraints"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

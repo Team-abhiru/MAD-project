@@ -10,14 +10,14 @@
         android:id="@+id/relativeLayout"
         android:layout_width="410dp"
         android:layout_height="659dp"
-        android:padding="20dp"
-        tools:context=".Show_Material_List">
+        android:padding="20dp" >
 
         <ListView
             android:id="@+id/ListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
             android:padding="10dp" />
 
     </RelativeLayout>

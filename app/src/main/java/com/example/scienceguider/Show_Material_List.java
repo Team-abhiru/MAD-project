@@ -32,6 +32,10 @@ public class Show_Material_List extends AppCompatActivity {
 
     ListView listView;
     List<PDF_Uploader> materialList;
+    TextView Mat_name;
+
+    Intent intent = getIntent();
+    String name = intent.getStringExtra("Mat_name");
 
     DatabaseReference databaseReference;
     FirebaseStorage firebaseStorage;
@@ -42,7 +46,10 @@ public class Show_Material_List extends AppCompatActivity {
         setContentView(R.layout.activity_show__material__list);
 
         listView = (ListView) findViewById(R.id.ListView);
+        Mat_name = findViewById(R.id.mat_name);
         materialList = new ArrayList<>();
+
+        Mat_name.setText(name);
 
         viewAllFiles();
 
@@ -61,14 +68,20 @@ public class Show_Material_List extends AppCompatActivity {
 
                 }
 
-                String[] uploads = new String[materialList.size()];
+                String[] material = new String[materialList.size()];
+                String[] subject = new String[materialList.size()];
 
-                for (int i = 0; i < uploads.length; i++ ){
+                for (int i = 0; i < material.length; i++ ){
 
-                    uploads[i] = materialList.get(i).getTopic();
+                    subject[i] = materialList.get(i).getSubject();
+
+                    if( subject[i] == name) {
+
+                        material[i] = materialList.get(i).getTopic();
+                    }
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,uploads);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,material);
 
                 listView.setAdapter(adapter);
 
@@ -80,9 +93,14 @@ public class Show_Material_List extends AppCompatActivity {
 
                         PDF_Uploader uploader = materialList.get(position);
 
-                        Intent intent = new Intent();
-                        intent.setType(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse(uploader.getUrl()));
+//                        Intent intent = new Intent();
+//                        intent.setType(Intent.ACTION_VIEW);
+//                        intent.setData(Uri.parse(uploader.getUrl()));
+//                        startActivity(intent);
+
+                        Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
+                        intent.putExtra("url",Uri.parse(uploader.getUrl()).toString());
+                        intent.putExtra("topic",uploader.topic);
                         startActivity(intent);
                     }
                 });

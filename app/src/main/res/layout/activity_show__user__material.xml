@@ -8,7 +8,7 @@
     tools:context=".Show_User_Material">
 
     <TextView
-        android:id="@+id/MatID"
+        android:id="@+id/showTp"
         android:layout_width="365dp"
         android:layout_height="61dp"
         android:layout_marginStart="30dp"
@@ -26,7 +26,7 @@
         android:layout_height="0dp"
         android:background="#D5FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MatID" />
+        app:layout_constraintTop_toBottomOf="@+id/showTp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
