@@ -1,111 +1,111 @@
 <resources>
-        <string name="app_name">Science Guider</string>
+    <string name="app_name">Science Guider</string>
 
-        <string name="ans1">Answer 1</string>
-        <string name="ans2">Answer 2</string>
-        <string name="btn_ans_submit">Check</string>
-        <string name="ans3">Answer 3</string>
-        <string name="topic_adminPanel">Admin Panel</string>
-        <string name="btn_add_question">Add new Question</string>
-        <string name="btn_show_questions">Show Questions</string>
-        <string name="btn_usersList">Show Users</string>
-        <string name="btn_show_feedback">Show Feedback</string>
-        <string name="btn_add_subject_materials">Add Materials</string>
-        <string name="topic_add_question">Add Question</string>
-        <string name="topic_quiz_list">Questions</string>
-        <string name="topic_quiz_user_view">Quiz Time</string>
-        <string name="correct_ans">Marks : 0/4</string>
-        <string name="quiz_subject">Physics</string>
-        <string name="quiz_topic">Electricity</string>
-        <string name="topic_add_questions">Add Questions</string>
-        <string name="btn_browse">Browse</string>
+    <string name="ans1">Answer 1</string>
+    <string name="ans2">Answer 2</string>
+    <string name="btn_ans_submit">Check</string>
+    <string name="ans3">Answer 3</string>
+    <string name="topic_adminPanel">Admin Panel</string>
+    <string name="btn_add_question">Add new Question</string>
+    <string name="btn_show_questions">Show Questions</string>
+    <string name="btn_usersList">Show Users</string>
+    <string name="btn_show_feedback">Show Feedback</string>
+    <string name="btn_add_subject_materials">Add Materials</string>
+    <string name="topic_add_question">Add Question</string>
+    <string name="topic_quiz_list">Questions</string>
+    <string name="topic_quiz_user_view">Quiz Time</string>
+    <string name="correct_ans">Marks : 0/4</string>
+    <string name="quiz_subject">Physics</string>
+    <string name="quiz_topic">Electricity</string>
+    <string name="topic_add_questions">Add Questions</string>
+    <string name="btn_browse">Browse</string>
 
-        <string-array name="subject_list">
-            <item>Subject</item>
-            <item>Biology</item>
-            <item>Physics</item>
-            <item>Chemistry</item>
-        </string-array>
+    <string-array name="subject_list">
+        <item>Subject</item>
+        <item>Biology</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
 
-        <string-array name="topics">
-            <item>Topic</item>
-            <item>Lesson 1</item>
-            <item>Lesson 2</item>
-            <item>Lesson 3</item>
-            <item>Lesson 4</item>
-        </string-array>
+    <string-array name="topics">
+        <item>Topic</item>
+        <item>Lesson 1</item>
+        <item>Lesson 2</item>
+        <item>Lesson 3</item>
+        <item>Lesson 4</item>
+    </string-array>
 
-        <string name="Button">Biology</string>
-        <string name="btnPhy">Physics</string>
-        <string name="btnChe">Chemistry</string>
-        <string name="HomeHead">Subjects</string>
-        <string name="title_activity_biology">Sign in</string>
-        <string name="prompt_email">Email</string>
-        <string name="prompt_password">Password</string>
-        <string name="action_sign_in">Sign in or register</string>
-        <string name="action_sign_in_short">Sign in</string>
-        <string name="welcome">"Welcome !"</string>
-        <string name="invalid_username">Not a valid username</string>
-        <string name="invalid_password">Password must be >5 characters</string>
-        <string name="login_failed">"Login failed"</string>
-        <string name="phyHd">Physics Materials</string>
-        <string name="cheHd">Chemistry Materials</string>
-        <string name="bioHd">Biology Materials</string>
-        <string name="addMa">Add Materials</string>
-        <string name="MatTopic">Topic</string>
-        <string name="MatSub">Subject</string>
-        <string name="Mat">Materials</string>
-        <string name="non" />
-        <string name="add">Add</string>
-        <string name="cont">Content</string>
-        <string name="editMat">Edit Materials</string>
-        <string name="btnClear">Clear</string>
-        <string name="btnCancel">Cancel</string>
-        <string name="edit">Edit</string>
-        <string name="update">Update</string>
-        <string name="browse">Browse</string>
+    <string name="Button">Biology</string>
+    <string name="btnPhy">Physics</string>
+    <string name="btnChe">Chemistry</string>
+    <string name="HomeHead">Subjects</string>
+    <string name="title_activity_biology">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="phyHd">Physics Materials</string>
+    <string name="cheHd">Chemistry Materials</string>
+    <string name="bioHd">Biology Materials</string>
+    <string name="addMa">Add Materials</string>
+    <string name="MatTopic">Topic</string>
+    <string name="MatSub">Subject</string>
+    <string name="Mat">Materials</string>
+    <string name="non" />
+    <string name="add">Add</string>
+    <string name="cont">Content</string>
+    <string name="editMat">Edit Materials</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="browse">Browse</string>
 
-        <string-array name="subjects">
-                <item>Biology</item>
-                <item>Physics</item>
-                <item>Chemistry</item>
-        </string-array>
+    <string-array name="subjects">
+        <item>Biology</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
 
-        <string name="topic_feedback_write">Place Your Feedback Here..</string>
-        <string name="btn_send_feedback">Send Feedback</string>
-        <string name="choose_subject">Subject</string>
-        <string name="feedback1">Excellent</string>
-        <string name="feedback2">Very Good</string>
-        <string name="feedback3">Good</string>
-        <string name="feedback4">Bad</string>
-        <string name="feedback_confirm">We got your Feedback</string>
-        <string name="thankyou">Thanks for your feedback !</string>
-        <string name="btn_view_feedback">View Feedback</string>
-        <string name="btn_edit_feedback">Edit Feedback</string>
-        <string name="btn_delete_feedback">Delete Feedback</string>
-        <string name="ShowMatShow">Structure and Functions</string>
-        <string name="content">Content</string>
-        <string name="topic_login">Login Here</string>
-        <string name="btn_login">Login</string>
-        <string name="btn_register">Register</string>
-        <string name="btn_reset_password">Reset Password</string>
-        <string name="topic_registration_form">Registration Form</string>
-        <string name="hint_username">Username</string>
-        <string name="hint_full_name">Full Name</string>
-        <string name="hint_e_mail">E-mail</string>
-        <string name="hint_school">School</string>
-        <string name="hint_password">Password</string>
-        <string name="topic_password_reset">Password Reset</string>
-        <string name="hint_new_password">New password</string>
-        <string name="hint_confirm_Password">Confirm Password</string>
-        <string name="btn_reset">Reset</string>
-        <string name="user_id">User ID</string>
-        <string name="not_registered">Not_Registered?</string>
-        <string name="register">REGISTER</string>
-        <string name="attempt_quiz">Attempt Quiz</string>
-        <string name="admin_quiz">Admin quiz view</string>
+    <string name="topic_feedback_write">Place Your Feedback Here..</string>
+    <string name="btn_send_feedback">Send Feedback</string>
+    <string name="choose_subject">Subject</string>
+    <string name="feedback1">Excellent</string>
+    <string name="feedback2">Very Good</string>
+    <string name="feedback3">Good</string>
+    <string name="feedback4">Bad</string>
+    <string name="feedback_confirm">We got your Feedback</string>
+    <string name="thankyou">Thanks for your feedback !</string>
+    <string name="btn_view_feedback">View Feedback</string>
+    <string name="btn_edit_feedback">Edit Feedback</string>
+    <string name="btn_delete_feedback">Delete Feedback</string>
+    <string name="ShowMatShow">Structure and Functions</string>
+    <string name="content">Content</string>
+    <string name="topic_login">Login Here</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="topic_registration_form">Registration Form</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_e_mail">E-mail</string>
+    <string name="hint_school">School</string>
+    <string name="hint_password">Password</string>
+    <string name="topic_password_reset">Password Reset</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_confirm_Password">Confirm Password</string>
+    <string name="btn_reset">Reset</string>
+    <string name="user_id">User ID</string>
+    <string name="not_registered">Not_Registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="attempt_quiz">Attempt Quiz</string>
+    <string name="admin_quiz">Admin quiz view</string>
     <string name="no_file_notify">File is not selected</string>
     <string name="upload">UPLOAD</string>
-        <string name="material">"Material "</string>
+    <string name="material">"Material "</string>
 
 </resources>
