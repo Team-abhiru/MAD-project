@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.icu.text.Transliterator;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.errorprone.annotations.SuppressPackageLocation;
 import com.google.firebase.database.DataSnapshot;
@@ -33,9 +35,7 @@ public class Show_Material_List extends AppCompatActivity {
     ListView listView;
     List<PDF_Uploader> materialList;
     TextView Mat_name;
-
-    Intent intent = getIntent();
-    String name = intent.getStringExtra("Mat_name");
+    String name;
 
     DatabaseReference databaseReference;
     FirebaseStorage firebaseStorage;
@@ -49,7 +49,10 @@ public class Show_Material_List extends AppCompatActivity {
         Mat_name = findViewById(R.id.mat_name);
         materialList = new ArrayList<>();
 
-        Mat_name.setText(name);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("Mat_name");
+
+        Mat_name.setText(name+" Materials");
 
         viewAllFiles();
 
@@ -61,6 +64,8 @@ public class Show_Material_List extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                System.out.println(dataSnapshot);
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
 
                     PDF_Uploader uploader = postSnapshot.getValue(PDF_Uploader.class);
@@ -68,42 +73,41 @@ public class Show_Material_List extends AppCompatActivity {
 
                 }
 
-                String[] material = new String[materialList.size()];
-                String[] subject = new String[materialList.size()];
+                List material = new ArrayList();
+                final List selectedSub = new ArrayList();
 
-                for (int i = 0; i < material.length; i++ ){
 
-                    subject[i] = materialList.get(i).getSubject();
+                for (int i = 0; i < materialList.size(); i++ ){
 
-                    if( subject[i] == name) {
 
-                        material[i] = materialList.get(i).getTopic();
+                    if(materialList.get(i).getSubject().compareTo(name) == 0 ) {
+
+                        material.add(materialList.get(i).getTopic());
+                        selectedSub.add(materialList.get(i));
+
                     }
                 }
+
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,material);
 
                 listView.setAdapter(adapter);
 
-                viewAllFiles();
+                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                        PDF_Uploader uploader = materialList.get(position);
+                            PDF_Uploader uploader = (PDF_Uploader) selectedSub.get(position);
 
-//                        Intent intent = new Intent();
-//                        intent.setType(Intent.ACTION_VIEW);
-//                        intent.setData(Uri.parse(uploader.getUrl()));
-//                        startActivity(intent);
 
-                        Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
-                        intent.putExtra("url",Uri.parse(uploader.getUrl()).toString());
-                        intent.putExtra("topic",uploader.topic);
-                        startActivity(intent);
-                    }
-                });
+                            Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
+                            intent.putExtra("url", Uri.parse(uploader.getUrl()).toString());
+                            intent.putExtra("topic", uploader.topic);
+                            startActivity(intent);
+                        }
+
+                    });
 
 
             }
@@ -113,6 +117,7 @@ public class Show_Material_List extends AppCompatActivity {
 
             }
         });
+
 
     }
 }

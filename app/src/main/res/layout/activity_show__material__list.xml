@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Show_Material_List">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="410dp"
         android:layout_height="659dp"
-        android:padding="20dp" >
+        android:padding="20dp">
 
         <ListView
             android:id="@+id/ListView"

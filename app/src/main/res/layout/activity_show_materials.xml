@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#656464"
+    android:background="@drawable/background"
     tools:context=".ShowMaterials">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="412dp"
+        android:layout_height="102dp"
+        android:background="#656464"
+        tools:layout_editor_absoluteX="-1dp">
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/showTp"
-        android:layout_width="313dp"
-        android:layout_height="82dp"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/ShowMatShow"
+        android:layout_marginTop="24dp"
+        android:text="@string/MatTopic"
         android:textAlignment="gravity"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
@@ -22,39 +31,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout4"
-        android:layout_width="414dp"
-        android:layout_height="0dp"
-        android:background="#D5FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/showTp" >
-
-        <Button
-            android:id="@+id/pdfDownload"
-            android:layout_width="390dp"
-            android:layout_height="71dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="14dp"
-            android:text="Button"
-            android:textAlignment="textStart"
-            android:textAllCaps="false" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/pdfDownload"
+        android:layout_width="375dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
     <ImageView
         android:id="@+id/image_delete"
         android:layout_width="29dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_delete_black_24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/showTp"
         app:layout_constraintStart_toEndOf="@+id/showTp"
+        app:layout_constraintTop_toBottomOf="@+id/image_edit"
         tools:ignore="MissingConstraints"></ImageView>
 
     <ImageView
@@ -62,11 +63,11 @@
         android:layout_width="29dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_edit_black_24dp"
         app:layout_constraintStart_toEndOf="@+id/showTp"
-        app:layout_constraintTop_toTopOf="@+id/showTp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

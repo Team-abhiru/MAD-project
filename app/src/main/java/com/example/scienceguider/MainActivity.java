@@ -49,21 +49,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openBiologyActivity() {
-        material = "Biology Materials";
+        material = "Biology";
         Intent intent = new Intent(this, Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
     }
 
     public void openPhysicsActivity() {
-        material = "Physics Materials";
+        material = "Physics";
         Intent intent = new Intent(this, Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
     }
 
     public void openBChemistryActivity() {
-        material = "Chemistry Materials";
+        material = "Chemistry";
         Intent intent = new Intent(this, Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
@@ -74,11 +74,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-    public void ShowMat(View view) {
-        Intent intent = new Intent(this, ShowMaterials.class);
-        startActivity(intent);
-
-
-    }
+    
 }
