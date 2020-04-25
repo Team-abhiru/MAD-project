@@ -15,7 +15,7 @@ public class ShowMaterials extends AppCompatActivity {
 
     ImageView edit, delete;
     TextView topic;
-    String url;
+    String url, name, sub;
     Button pdfButton;
 
     @Override
@@ -37,9 +37,10 @@ public class ShowMaterials extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("topic");
+        name = intent.getStringExtra("topic");
         topic.setText(name);
         url = intent.getStringExtra("url");
+        sub = intent.getStringExtra("subject");
 
         pdfButton.setText(name+".pdf");
 
@@ -57,6 +58,8 @@ public class ShowMaterials extends AppCompatActivity {
     public void openEditMaterialActivity() {
 
         Intent intent = new Intent(this, Edit_Material_Details.class);
+        intent.putExtra("topName", name);
+        intent.putExtra("subject", sub);
         startActivity(intent);
     }
 
