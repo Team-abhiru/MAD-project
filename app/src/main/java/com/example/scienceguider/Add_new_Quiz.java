@@ -23,7 +23,6 @@ public class Add_new_Quiz extends AppCompatActivity {
     private EditText answer1;
     private EditText answer2;
     private EditText answer3;
-    private Button save;
     private Spinner subject;
     private Spinner topic;
     @Override
@@ -39,7 +38,7 @@ public class Add_new_Quiz extends AppCompatActivity {
         answer1 = (EditText) findViewById(R.id.text_view_option1);
         answer2 = (EditText) findViewById(R.id.text_view_option2);
         answer3 = (EditText) findViewById(R.id.text_view_option3);
-        save = (Button) findViewById(R.id.id_btn_save);
+        Button save = (Button) findViewById(R.id.id_btn_save);
         subject = (Spinner) findViewById(R.id.spinner);
         topic = (Spinner) findViewById(R.id.spinner2);
 
