@@ -66,9 +66,11 @@ public class Add_new_Quiz extends AppCompatActivity {
                 else{
                     int answer = Integer.parseInt(add_answer.getText().toString());
 
-                    Question questionObj = new Question(question, answer, option1, option2, option3,selected_subject, selected_topic );
-
                     String questionID = refDB.push().getKey();
+
+                    Question questionObj = new Question(question, answer, option1, option2, option3,selected_subject, selected_topic, questionID );
+
+
                     refDB.child(questionID).setValue(questionObj);
 
                     Toast.makeText(Add_new_Quiz.this,"New question is added",Toast.LENGTH_SHORT).show();
