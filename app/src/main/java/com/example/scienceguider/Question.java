@@ -9,11 +9,20 @@ public class Question {
     private String option3;
     private String subject;
     private String topic;
+    private String QID;
+
+    public String getQID() {
+        return QID;
+    }
+
+    public void setQID(String QID) {
+        this.QID = QID;
+    }
 
     public Question() {
     }
 
-    public Question(String question, int answer, String option1, String option2, String option3, String subject, String topic) {
+    public Question(String question, int answer, String option1, String option2, String option3, String subject, String topic, String QID) {
         this.question = question;
         this.answer = answer;
         this.option1 = option1;
@@ -21,6 +30,7 @@ public class Question {
         this.option3 = option3;
         this.subject = subject;
         this.topic = topic;
+        this.QID = QID;
     }
 
     public String getQuestion() {
