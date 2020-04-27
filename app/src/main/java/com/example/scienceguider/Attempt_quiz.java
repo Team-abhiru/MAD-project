@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class Quiz_list_user_view extends AppCompatActivity {
+public class Attempt_quiz extends AppCompatActivity {
     private static final long COUNT_DOWN_TIME = 30000;
 
     private TextView textView_question;
@@ -57,7 +57,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_list_user_view);
+        setContentView(R.layout.attempt_quiz);
 
         Log.i("State","Create");
 
@@ -102,7 +102,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
                             if(option1.isChecked() || option2.isChecked() || option3.isChecked()){
                                 checkAnswer();
                             }else{
-                                Toast.makeText(Quiz_list_user_view.this,"Select a answer",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Attempt_quiz.this,"Select a answer",Toast.LENGTH_SHORT).show();
                             }
                         }else{
                             getQuestion();
@@ -122,19 +122,17 @@ public class Quiz_list_user_view extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.i("State","Start");
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Log.i("State","Resume");
-        textView_question.setText("Hello");
     }
 
     private void getQuestion(){
-        Log.i("State","question");
-        System.out.println(questionsCount);
+        Log.i("State","Get question");
+
         if(questionNum < questionsCount){
             option1.setTextColor(defaultColor);
             option2.setTextColor(defaultColor);
@@ -150,6 +148,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
             option3.setText(currQues.getOption3());
 
             questionNum++;
+
             textView_quesNumber.setText("Question : " + questionNum);
             answered = false;
             confirm.setText("Confirm Answer");
@@ -186,6 +185,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
         }
         else {
             textView_review.setText("Wrong answer do more exercises");
+            textView_marks.setText(("Marks : "+ score +"/"+questionsCount));
         }
 
         showSolution();
@@ -201,17 +201,24 @@ public class Quiz_list_user_view extends AppCompatActivity {
 
         switch (answer){
             case 1 :
-                option1.setTextColor(Color.GREEN);
+                option1.setTextColor(Color.BLUE);
                 break;
             case 2 :
-                option2.setTextColor(Color.GREEN);
+                option2.setTextColor(Color.BLUE);
                 break;
             case 3 :
-                option3.setTextColor(Color.GREEN);
+                option3.setTextColor(Color.BLUE);
                 break;
         }
-        confirm.setText("Next");
+
+        if(questionNum < questionsCount) {
+            confirm.setText("Next");
+        }else{
+            confirm.setText("Finish");
+            getQuestion();
+        }
     }
+
     private void finishQuiz(){
         finish();
     }
