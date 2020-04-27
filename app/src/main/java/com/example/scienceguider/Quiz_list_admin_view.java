@@ -32,7 +32,11 @@ public class Quiz_list_admin_view extends AppCompatActivity {
     private Question questionRef = null;
     private ListView listView;
 
+    private Spinner subject;
+    private Spinner topic;
+
     private List<Question> questionList;
+    private QuestionList adapter;
 
     private DatabaseReference refDB;
 
@@ -44,6 +48,8 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         refDB = FirebaseDatabase.getInstance().getReference("Questions");
 
         listView = findViewById(R.id.id_quiz_list_admin);
+        subject = (Spinner) findViewById(R.id.id_subject_list) ;
+        topic = (Spinner) findViewById(R.id.id_topic_list) ;
 
         questionList = new ArrayList<>();
 
@@ -75,16 +81,71 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         refDB.addValueEventListener(new ValueEventListener() {
 
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.i("GetValues", "Get values to an array");
-                questionList.clear();
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    questionArray = snapshot.getValue(Question.class);
-                    questionList.add(questionArray);
-                }
-                QuestionList adapter = new QuestionList(Quiz_list_admin_view.this,questionList);
+            public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
 
-                listView.setAdapter(adapter);
+                subject.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                        Log.i("GetValues", "Get values to an array");
+
+                        questionList.clear();
+
+                        String topicName = topic.getSelectedItem().toString();
+                        String subjectName = subject.getSelectedItem().toString();
+
+                        System.out.println(subjectName);
+                        System.out.println(topicName);
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            questionArray = snapshot.getValue(Question.class);
+
+                            if(questionArray.getSubject().contentEquals(subjectName) && questionArray.getTopic().contentEquals(topicName)) {
+                                questionList.add(questionArray);
+                                System.out.println(topicName);
+                            }
+                        }
+                        adapter = new QuestionList(Quiz_list_admin_view.this, questionList);
+
+                        listView.setAdapter(adapter);
+                        System.out.println(topicName);
+
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+
+                    }
+                });
+
+                topic.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                        Log.i("GetValues", "Get values to an array");
+
+                        questionList.clear();
+
+                        String topicName = topic.getSelectedItem().toString();
+                        String subjectName = subject.getSelectedItem().toString();
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            questionArray = snapshot.getValue(Question.class);
+
+                            if(questionArray.getSubject().contentEquals(subjectName) && questionArray.getTopic().contentEquals(topicName)) {
+                                questionList.add(questionArray);
+                            }
+                        }
+                        adapter = new QuestionList(Quiz_list_admin_view.this, questionList);
+
+                        listView.setAdapter(adapter);
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+
+                    }
+                });
 
             }
 
