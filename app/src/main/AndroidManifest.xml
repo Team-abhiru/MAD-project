@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.scienceguider">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Delete_question" ></activity>
         <activity android:name=".Temp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -19,8 +23,8 @@
         <activity android:name=".Reset" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Login" />
-        <activity android:name=".Add_new_Quiz" />
-        <activity android:name=".Quiz_list_admin_view" />
+        <activity android:name=".Add_new_Quiz" android:parentActivityName=".Temp"/>
+        <activity android:name=".Quiz_list_admin_view" android:parentActivityName=".Temp" />
         <activity android:name=".Admin_Panel" />
         <activity android:name=".Feedback_confirm" />
         <activity android:name=".ShowMaterials" />
@@ -28,10 +32,8 @@
         <activity android:name=".BiologyActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".Quiz_list_user_view" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Attempt_quiz" android:parentActivityName=".Temp"/>
         <activity android:name=".Feedback_write" />
     </application>
 
