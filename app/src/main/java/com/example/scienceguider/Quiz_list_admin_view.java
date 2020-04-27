@@ -171,8 +171,8 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         final EditText edit_option3 = (EditText) dialogView.findViewById(R.id.text_view_edit_option3);
         final EditText edit_Answer = (EditText) dialogView.findViewById(R.id.id_edit_add_answer);
 
-        final Spinner edit_topic = (Spinner) dialogView.findViewById(R.id.edit_spinner);
-        final Spinner edit_subject = (Spinner) dialogView.findViewById(R.id.edit_spinner2);
+        final Spinner edit_topic = (Spinner) dialogView.findViewById(R.id.edit_topic);
+        final Spinner edit_subject = (Spinner) dialogView.findViewById(R.id.edit_subject);
 
         final Button btn_update = (Button) dialogView.findViewById(R.id.id_btn_update);
 
@@ -186,13 +186,14 @@ public class Quiz_list_admin_view extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                String up_question =  edit_question.getText().toString();
-               String up_option1 =edit_option1.getText().toString();
+               String up_option1 = edit_option1.getText().toString();
                String up_option2 = edit_option2.getText().toString();
-               String up_option3 =edit_option3.getText().toString();
-               String up_answer =edit_Answer.getText().toString();
-               String up_subject =edit_subject.getSelectedItem().toString();
-               String up_topic =edit_topic.getSelectedItem().toString();
+               String up_option3 = edit_option3.getText().toString();
+               String up_answer = edit_Answer.getText().toString();
+               String up_subject = edit_subject.getSelectedItem().toString();
+               String up_topic = edit_topic.getSelectedItem().toString();
 
+               System.out.println(up_subject);
                 if(up_option1.isEmpty() || up_option2.isEmpty() || up_option3.isEmpty()
                         || up_answer.isEmpty() || up_question.isEmpty() || up_subject.contentEquals("Subject")
                         || up_topic.contentEquals("Topic")){

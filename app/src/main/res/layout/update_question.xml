@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.027" />
 
     <Spinner
-        android:id="@+id/edit_spinner2"
+        android:id="@+id/edit_topic"
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginTop="52dp"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/edit_spinner"
+        android:id="@+id/edit_subject"
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginStart="4dp"
