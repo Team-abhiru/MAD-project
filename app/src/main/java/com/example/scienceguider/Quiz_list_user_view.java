@@ -29,6 +29,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
     private static final long COUNT_DOWN_TIME = 30000;
 
     private TextView textView_question;
+    private TextView textView_review;
     private TextView textView_marks;
     private TextView textView_subject;
     private TextView textView_quesNumber;
@@ -69,6 +70,7 @@ public class Quiz_list_user_view extends AppCompatActivity {
         textView_subject = (TextView) findViewById(R.id.id_subject);
         textView_quesNumber = (TextView) findViewById(R.id.id_question_number);
         textView_counter = (TextView) findViewById(R.id.id_counter);
+        textView_review = (TextView) findViewById(R.id.id_review);
 
         radioGroup = (RadioGroup) findViewById(R.id.id_radio_group);
         option1 = (RadioButton) findViewById(R.id.id_answer1);
@@ -152,6 +154,8 @@ public class Quiz_list_user_view extends AppCompatActivity {
             answered = false;
             confirm.setText("Confirm Answer");
             countdown = COUNT_DOWN_TIME;
+
+            textView_review.setText("");
             startCountDown();
         }
         else{
@@ -178,6 +182,10 @@ public class Quiz_list_user_view extends AppCompatActivity {
         if(givenAns == answer){
             score++;
             textView_marks.setText(("Marks : "+ score +"/"+questionsCount));
+            textView_review.setText("Well done Correct Answer");
+        }
+        else {
+            textView_review.setText("Wrong answer do more exercises");
         }
 
         showSolution();
