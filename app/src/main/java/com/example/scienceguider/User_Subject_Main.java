@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Subject_User_Main extends AppCompatActivity {
+public class User_Subject_Main extends AppCompatActivity {
 
     Button button1;
     Button button2;
@@ -17,7 +17,7 @@ public class Subject_User_Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subject__user__main);
+        setContentView(R.layout.activity_user__subject__main);
 
         button1 = findViewById(R.id.btnBio);
         button2 = findViewById(R.id.btnPhy);
