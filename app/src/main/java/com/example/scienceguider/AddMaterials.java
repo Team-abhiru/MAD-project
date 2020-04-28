@@ -130,8 +130,10 @@ public class AddMaterials extends AppCompatActivity {
 
                 String selected_subject = subject.getSelectedItem().toString();
 
-                PDF_Uploader uploader = new PDF_Uploader(Tp_name.getText().toString(),selected_subject, url.toString());
-                databaseReference.child(databaseReference.push().getKey()).setValue(uploader).addOnCompleteListener(new OnCompleteListener<Void>() {
+                String childKey = databaseReference.push().getKey();
+
+                PDF_Uploader uploader = new PDF_Uploader(Tp_name.getText().toString(),selected_subject, url.toString(),childKey);
+                databaseReference.child(childKey).setValue(uploader).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
 

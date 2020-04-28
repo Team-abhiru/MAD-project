@@ -7,12 +7,35 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+import java.time.Instant;
+
 
 public class Edit_Material_Details extends AppCompatActivity {
 
-    private Spinner subject;
-    TextView tpName;
-    String sub;
+    private Spinner subjectSp;
+    private TextView tpName,edit_notification;
+    private String oldSubject, key, oldUrl, topic, subject, url;
+    private Button update, cancel,browse;
+    private Uri pdfUri;
+
+    private StorageReference storageReference;
+    private DatabaseReference databaseReference;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

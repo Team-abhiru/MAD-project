@@ -93,12 +93,12 @@ public class Show_Material_List extends AppCompatActivity {
 
                 listView.setAdapter(adapter);
 
-                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                            PDF_Uploader uploader = (PDF_Uploader) selectedSub.get(position);
+                        PDF_Uploader uploader = (PDF_Uploader) selectedSub.get(position);
 
 
                             Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
@@ -108,7 +108,7 @@ public class Show_Material_List extends AppCompatActivity {
                             startActivity(intent);
                         }
 
-                    });
+                });
 
 
             }
