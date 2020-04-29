@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-class User_Show_Material_List extends AppCompatActivity {
+public class User_Show_Material_List extends AppCompatActivity {
 
     ListView listView;
     List<PDF_Uploader> materialList;
@@ -35,7 +35,7 @@ class User_Show_Material_List extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_show_material_list);
+        setContentView(R.layout.activity_user__show__material__list);
 
         listView = (ListView) findViewById(R.id.UserListView);
         Mat_name = findViewById(R.id.mat_name_user);

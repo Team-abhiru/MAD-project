@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 
 
 
-class User_Show_Material extends AppCompatActivity {
+public class User_Show_Material extends AppCompatActivity {
 
 
 

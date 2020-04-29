@@ -44,7 +44,7 @@ public class Show_Material_List extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show__material__list);
 
-        listView = (ListView) findViewById(R.id.UserListView);
+        listView = (ListView) findViewById(R.id.ListView);
         Mat_name = findViewById(R.id.mat_name);
         materialList = new ArrayList<>();
 

@@ -14,13 +14,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".User_Show_Material_List"/>
         <activity android:name=".User_Show_Material" />
-        <activity android:name=".User_Subject_Main" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".User_Subject_Main"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".Edit_Material_Details" />
         <activity android:name=".Show_Material_List" />
         <activity android:name=".View" />
@@ -33,8 +28,13 @@
         <activity android:name=".Feedback_confirm" />
         <activity android:name=".ShowMaterials" />
         <activity android:name=".AddMaterials" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Quiz_list_user_view" />
         <activity android:name=".Feedback_write" />
     </application>

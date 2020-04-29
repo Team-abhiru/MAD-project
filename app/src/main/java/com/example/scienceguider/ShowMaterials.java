@@ -25,8 +25,8 @@ public class ShowMaterials extends AppCompatActivity {
 
         edit = findViewById(R.id.image_edit);
         delete = findViewById(R.id.image_delete);
-        topic = findViewById(R.id.showTpUser);
-        pdfButton = findViewById(R.id.userPdfDownload);
+        topic = findViewById(R.id.showTp);
+        pdfButton = findViewById(R.id.pdfDownload);
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override

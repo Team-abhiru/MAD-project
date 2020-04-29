@@ -13,7 +13,7 @@
     app:layout_constraintBaseline_creator="@android:integer/config_mediumAnimTime" >
 
     <Button
-        android:id="@+id/btnBioUser"
+        android:id="@+id/btnBio"
         android:layout_width="413dp"
         android:layout_height="140dp"
         android:layout_marginTop="24dp"
@@ -27,10 +27,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeHeaderUser" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeHeader" />
 
     <Button
-        android:id="@+id/btnPhyUser"
+        android:id="@+id/btnPhy"
         android:layout_width="413dp"
         android:layout_height="140dp"
         android:background="#FCB53A3A"
@@ -41,10 +41,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBioUser" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBio" />
 
     <Button
-        android:id="@+id/btnCheUser"
+        android:id="@+id/btnChe"
         android:layout_width="413dp"
         android:layout_height="140dp"
         android:background="#FC1C2E65"
@@ -55,10 +55,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPhyUser" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPhy" />
 
     <TextView
-        android:id="@+id/HomeHeaderUser"
+        android:id="@+id/HomeHeader"
         android:layout_width="225dp"
         android:layout_height="33dp"
         android:layout_marginTop="24dp"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCheUser"
+        app:layout_constraintTop_toBottomOf="@+id/btnChe"
         tools:ignore="OnClick" />
 
 
