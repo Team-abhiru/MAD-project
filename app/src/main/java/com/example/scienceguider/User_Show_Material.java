@@ -15,9 +15,12 @@ import com.google.firebase.database.DatabaseReference;
 
 class User_Show_Material extends AppCompatActivity {
 
+
+
+
     ImageView edit, delete;
     TextView topic;
-    String url, name, sub, key;
+    String url, name, subject;
     Button pdfButton;
 
     DatabaseReference databaseReference;
@@ -36,8 +39,9 @@ class User_Show_Material extends AppCompatActivity {
         name = intent.getStringExtra("topic");
         topic.setText(name);
         url = intent.getStringExtra("url");
+        subject = intent.getStringExtra("Mat_name");
 
-        pdfButton.setText(name.trim()+".pdf");
+        pdfButton.setText(name.replace(" ","")+".pdf");
 
         pdfButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +53,12 @@ class User_Show_Material extends AppCompatActivity {
             }
         });
 
+        Intent i = new Intent(User_Show_Material.this, User_Show_Material_List.class);
+        i.putExtra("Mat_name",subject);
+
     }
+
+
+
 
 }

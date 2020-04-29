@@ -52,7 +52,7 @@ public class Edit_Material_Details extends AppCompatActivity {
         subject.setAdapter(myAdapter);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("topName");
+        final String name = intent.getStringExtra("topName");
         tpName.setText(name);
         sub = intent.getStringExtra("subject");
     }

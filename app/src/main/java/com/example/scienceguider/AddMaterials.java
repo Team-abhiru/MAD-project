@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -37,6 +38,7 @@ public class AddMaterials extends AppCompatActivity {
     private Button upload;
     private TextView add_notification;
     private Spinner subject;
+    private String selected_subject;
 
     StorageReference storageReference;
     DatabaseReference databaseReference;
@@ -53,6 +55,8 @@ public class AddMaterials extends AppCompatActivity {
                 .getStringArray(R.array.subjects));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         subject.setAdapter(myAdapter);
+
+        selected_subject = subject.getSelectedItem().toString();
 
         Tp_name = findViewById(R.id.Tp_name);
         id_btn_browse = findViewById(R.id.id_btn_browse);
@@ -128,7 +132,7 @@ public class AddMaterials extends AppCompatActivity {
 
                 Uri url = uri.getResult();
 
-                String selected_subject = subject.getSelectedItem().toString();
+                final String selected_subject = subject.getSelectedItem().toString();
 
                 String childKey = databaseReference.push().getKey();
 
@@ -139,12 +143,24 @@ public class AddMaterials extends AppCompatActivity {
 
                         progressDialog.dismiss();
 
-                        if(task.isSuccessful()) {
+                        if (task.isSuccessful()) {
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(AddMaterials.this, "Material Uploaded...", Toast.LENGTH_LONG).show();
 
-                            Toast.makeText(AddMaterials.this, "File Successfully uploaded", Toast.LENGTH_SHORT).show();
+                                }
+
+                            }, 500);
+
+                            Intent intent = new Intent(AddMaterials.this, Show_Material_List.class);
+                            intent.putExtra("Mat_name", selected_subject);
+                            startActivity(intent);
+                        } else {
+
+                            Toast.makeText(AddMaterials.this, "Material Uploading Failed...", Toast.LENGTH_SHORT).show();
                         }
-                        else
-                            Toast.makeText(AddMaterials.this,"File not Successfully uploaded", Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -156,7 +172,7 @@ public class AddMaterials extends AppCompatActivity {
 
                 int progress = (int)(100*taskSnapshot.getBytesTransferred()/taskSnapshot.getTotalByteCount());
 
-                progressDialog.setMessage("Uploaded "+(int)progress+"%");
+                progressDialog.setMessage("Upload "+(int)progress+"%");
 
             }
         }).addOnFailureListener(new OnFailureListener() {

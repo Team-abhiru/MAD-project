@@ -16,6 +16,7 @@
         android:id="@+id/btnBio"
         android:layout_width="413dp"
         android:layout_height="140dp"
+        android:layout_marginTop="24dp"
         android:background="#FC429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
@@ -23,12 +24,10 @@
         android:textIsSelectable="false"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeHeader" />
 
     <Button
         android:id="@+id/btnPhy"
@@ -39,12 +38,10 @@
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBio"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBio" />
 
     <Button
         android:id="@+id/btnChe"
@@ -55,17 +52,16 @@
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPhy"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPhy" />
 
     <TextView
         android:id="@+id/HomeHeader"
         android:layout_width="225dp"
         android:layout_height="33dp"
+        android:layout_marginTop="24dp"
         android:background="#FFFFFF"
         android:freezesText="false"
         android:text="@string/HomeHead"
@@ -75,12 +71,10 @@
         android:textIsSelectable="true"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/add"
@@ -93,7 +87,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChe"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="OnClick" />
 
 

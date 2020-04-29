@@ -97,6 +97,7 @@ class User_Show_Material_List extends AppCompatActivity {
                         Intent intent = new Intent(User_Show_Material_List.this, User_Show_Material.class);
                         intent.putExtra("url", Uri.parse(uploader.getUrl()).toString());
                         intent.putExtra("topic", uploader.topic);
+                        intent.putExtra("Mat_name", name);
                         startActivity(intent);
                     }
 
