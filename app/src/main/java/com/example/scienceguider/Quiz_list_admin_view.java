@@ -45,6 +45,7 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list_admin_view);
 
+        //get the reference from firbase database
         refDB = FirebaseDatabase.getInstance().getReference("Questions");
 
         listView = findViewById(R.id.id_quiz_list_admin);
@@ -53,6 +54,10 @@ public class Quiz_list_admin_view extends AppCompatActivity {
 
         questionList = new ArrayList<>();
 
+        /**
+         *  set item click listener for the list item
+         *  when click on item it call show question function with related object of selected item
+         */
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -62,33 +67,27 @@ public class Quiz_list_admin_view extends AppCompatActivity {
             }
         });
 
-//        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//                questionRef = questionList.get(position);
-//
-//                showUpdate(questionRef);
-//                return false;
-//            }
-//        });
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
+        /**
+         * this listener method use to get data to
+         * an array from the database
+         */
         refDB.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
 
+                Log.i("GetValues", "Get values to an array");
+
+                //list update when select Subject from the spinner
                 subject.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                        Log.i("GetValues", "Get values to an array");
-
                         questionList.clear();
 
                         String topicName = topic.getSelectedItem().toString();
@@ -102,7 +101,6 @@ public class Quiz_list_admin_view extends AppCompatActivity {
 
                             if(questionArray.getSubject().contentEquals(subjectName) && questionArray.getTopic().contentEquals(topicName)) {
                                 questionList.add(questionArray);
-                                System.out.println(topicName);
                             }
                         }
                         adapter = new QuestionList(Quiz_list_admin_view.this, questionList);
@@ -118,12 +116,10 @@ public class Quiz_list_admin_view extends AppCompatActivity {
                     }
                 });
 
+                //list update when select Topic from the spinner
                 topic.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                        Log.i("GetValues", "Get values to an array");
-
                         questionList.clear();
 
                         String topicName = topic.getSelectedItem().toString();
