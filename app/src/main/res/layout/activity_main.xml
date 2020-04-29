@@ -16,7 +16,7 @@
         android:id="@+id/btnBio"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:background="#FC429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
@@ -61,8 +61,7 @@
         android:id="@+id/HomeHeader"
         android:layout_width="225dp"
         android:layout_height="33dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="480dp"
+        android:layout_marginTop="24dp"
         android:background="#FFFFFF"
         android:freezesText="false"
         android:text="@string/HomeHead"
@@ -72,7 +71,6 @@
         android:textIsSelectable="true"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChe"
         tools:ignore="OnClick" />
 
 
