@@ -28,12 +28,12 @@ class User_Show_Material extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show__user__material);
+        setContentView(R.layout.activity_user__show__material);
 
         edit = findViewById(R.id.image_edit);
         delete = findViewById(R.id.image_delete);
-        topic = findViewById(R.id.showTp);
-        pdfButton = findViewById(R.id.pdfDownload);
+        topic = findViewById(R.id.showTpUser);
+        pdfButton = findViewById(R.id.userPdfDownload);
 
         Intent intent = getIntent();
         name = intent.getStringExtra("topic");

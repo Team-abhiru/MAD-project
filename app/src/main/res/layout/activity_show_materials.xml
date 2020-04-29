@@ -19,7 +19,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/showTp"
+        android:id="@+id/showTpUser"
         android:layout_width="311dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/pdfDownload"
+        android:id="@+id/userPdfDownload"
         android:layout_width="375dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
@@ -56,7 +56,7 @@
         android:layout_marginTop="12dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_delete_black_24dp"
-        app:layout_constraintStart_toEndOf="@+id/showTp"
+        app:layout_constraintStart_toEndOf="@+id/showTpUser"
         app:layout_constraintTop_toBottomOf="@+id/image_edit"
         tools:ignore="MissingConstraints"></ImageView>
 
@@ -68,7 +68,7 @@
         android:layout_marginTop="12dp"
         android:contentDescription="TODO"
         android:src="@drawable/ic_edit_black_24dp"
-        app:layout_constraintStart_toEndOf="@+id/showTp"
+        app:layout_constraintStart_toEndOf="@+id/showTpUser"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"></ImageView>
 

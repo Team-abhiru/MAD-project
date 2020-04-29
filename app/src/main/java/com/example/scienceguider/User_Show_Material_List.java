@@ -35,10 +35,10 @@ class User_Show_Material_List extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show__user__material);
+        setContentView(R.layout.activity_user_show_material_list);
 
-        listView = (ListView) findViewById(R.id.ListView);
-        Mat_name = findViewById(R.id.mat_name);
+        listView = (ListView) findViewById(R.id.UserListView);
+        Mat_name = findViewById(R.id.mat_name_user);
         materialList = new ArrayList<>();
 
         Intent intent = getIntent();
@@ -47,6 +47,7 @@ class User_Show_Material_List extends AppCompatActivity {
         Mat_name.setText(name+" Materials");
 
         viewAllFiles();
+
 
     }
 
@@ -91,18 +92,18 @@ class User_Show_Material_List extends AppCompatActivity {
 
                         PDF_Uploader uploader = (PDF_Uploader) selectedSub.get(position);
 
-
-                        System.out.println(key);
-
                         Intent intent = new Intent(User_Show_Material_List.this, User_Show_Material.class);
                         intent.putExtra("url", Uri.parse(uploader.getUrl()).toString());
                         intent.putExtra("topic", uploader.topic);
-                        intent.putExtra("Mat_name", name);
+                        intent.putExtra("subject",uploader.subject);
+                        intent.putExtra("key",uploader.key);
+
+                        System.out.println(key);
+
                         startActivity(intent);
                     }
 
                 });
-
 
             }
 

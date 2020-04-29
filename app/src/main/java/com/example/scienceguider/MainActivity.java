@@ -3,12 +3,8 @@ package com.example.scienceguider;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.content.Context;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.content.Intent;
-import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 
@@ -25,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button1 = findViewById(R.id.btnBio);
-        button2 = findViewById(R.id.btnPhy);
-        button3 = findViewById(R.id.btnChe);
+        button1 = findViewById(R.id.btnBioUser);
+        button2 = findViewById(R.id.btnPhyUser);
+        button3 = findViewById(R.id.btnCheUser);
 
 
         button1.setOnClickListener(new View.OnClickListener() {

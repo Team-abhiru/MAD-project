@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteX="-1dp">
 
         <TextView
-            android:id="@+id/showTp"
+            android:id="@+id/showTpUser"
             android:layout_width="365dp"
             android:layout_height="61dp"
             android:layout_alignParentStart="true"
@@ -35,7 +35,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/pdfDownload"
+        android:id="@+id/userPdfDownload"
         android:layout_width="375dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"

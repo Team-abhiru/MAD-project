@@ -38,14 +38,13 @@ public class Show_Material_List extends AppCompatActivity {
     String name;
 
     DatabaseReference databaseReference;
-    FirebaseStorage firebaseStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show__material__list);
 
-        listView = (ListView) findViewById(R.id.ListView);
+        listView = (ListView) findViewById(R.id.UserListView);
         Mat_name = findViewById(R.id.mat_name);
         materialList = new ArrayList<>();
 
