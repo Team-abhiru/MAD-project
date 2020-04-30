@@ -89,6 +89,7 @@
     <string name="user_id">User ID</string>
     <string name="not_registered">Not_Registered?</string>
     <string name="register">REGISTER</string>
+    <string name="feedbacks">Feedback</string>
 
 
 </resources>

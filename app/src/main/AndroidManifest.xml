@@ -12,16 +12,13 @@
         <activity android:name=".View"></activity>
         <activity android:name=".Reset"></activity>
         <activity android:name=".RegisterActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
         </activity>
         <activity android:name=".Login"/>
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel"/>
-        <activity android:name=".Feedback_confirm"/>
+        <activity android:name=".Feedback_view"/>
         <activity android:name=".ShowMaterials"></activity>
         <activity android:name=".AddMaterials" />
         <activity android:name=".BiologyActivity" />
@@ -30,7 +27,12 @@
         <activity android:name=".MainActivity">
         </activity >
         <activity android:name=".Quiz_list_user_view"/>
-        <activity android:name=".Feedback_write"></activity>
+        <activity android:name=".Feedback_write">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 
