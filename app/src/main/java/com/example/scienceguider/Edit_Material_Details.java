@@ -220,9 +220,7 @@ public class Edit_Material_Details extends AppCompatActivity {
     }
 
     private boolean updateMaterial(String topic, final String subject, String url, String key){
-
-        System.out.println(key);
-
+        
        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Materials").child(key);
 
         PDF_Uploader uploader = new PDF_Uploader(topic,subject, url,key);
