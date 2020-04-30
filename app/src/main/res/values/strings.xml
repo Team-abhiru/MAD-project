@@ -89,7 +89,12 @@
     <string name="user_id">User ID</string>
     <string name="not_registered">Not_Registered?</string>
     <string name="register">REGISTER</string>
+
+    <string name="topic_upload_documents">Upload Documents</string>
+    <string name="upload_pdf">upload</string>
+
     <string name="feedbacks">Feedback</string>
+
 
 
 </resources>
