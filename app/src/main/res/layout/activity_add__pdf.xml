@@ -1,70 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:padding="30dp"
     tools:context=".Add_PDF">
 
     <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:src="@drawable/storage"
-        android:layout_gravity="center" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/storage" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Firebase Storage"
-        android:textSize="30sp"
-        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="130dp"
         android:fontFamily="sans-serif-light"
-        android:layout_marginTop="20dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/email1"
-        android:inputType="textEmailAddress"
-        android:hint="Enter email"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Subject"
-        android:hint="Enter Subject Name"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Topic"
-        android:hint="Enter Topic"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp" />
+        android:text="Material Library"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:id="@+id/id_btn_upload1"
-        android:text="@string/upload_pdf"
-        android:background="#F7DE63"
-        android:textColor="#ffffff"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="80dp" />
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="193dp"
+        android:text="UPLOAD" />
+
+    <Button
+        android:id="@+id/fetchFiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:text="Fetch Files" />
+
+    <Button
+        android:id="@+id/selectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:text="Select File" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No file is selected" />
+
+</RelativeLayout>
 
 
-
-
-
-
-
-
-</LinearLayout>
