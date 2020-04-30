@@ -108,9 +108,6 @@ public class ShowMaterials extends AppCompatActivity {
                 }
             }
         });
-
-
-
     }
 
     public void openEditMaterialActivity() {
