@@ -108,5 +108,11 @@
     <string name="upload">UPLOAD</string>
     <string name="material">"Material "</string>
     <string name="addmat">ADD MATERIALS</string>
+    <string name="topic_upload_documents">Upload Documents</string>
+    <string name="upload_pdf">upload</string>
+    <string name="feedbacks">Feedback</string>
+
+
+
 
 </resources>
