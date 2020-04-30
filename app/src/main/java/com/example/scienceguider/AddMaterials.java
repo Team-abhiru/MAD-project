@@ -40,8 +40,8 @@ public class AddMaterials extends AppCompatActivity {
     private Spinner subject;
     private String selected_subject;
 
-    StorageReference storageReference;
-    DatabaseReference databaseReference;
+    private StorageReference storageReference;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +111,6 @@ public class AddMaterials extends AppCompatActivity {
            pdfUri = data.getData();
            add_notification.setText("A file is selected : "+ data.getData().getLastPathSegment());
 
-
         }
     }
 
@@ -131,6 +130,7 @@ public class AddMaterials extends AppCompatActivity {
                 while (!uri.isComplete()) ;
 
                 Uri url = uri.getResult();
+                System.out.println(url);
 
                 final String selected_subject = subject.getSelectedItem().toString();
 
