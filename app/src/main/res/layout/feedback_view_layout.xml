@@ -4,8 +4,19 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/feedback_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#090101"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/id_feedback_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#AB040000"
+        android:textSize="20sp" />
+
 </LinearLayout>
