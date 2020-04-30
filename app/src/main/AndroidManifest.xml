@@ -18,7 +18,7 @@
         <activity android:name=".Add_new_Quiz"></activity>
         <activity android:name=".Quiz_list_admin_view"></activity>
         <activity android:name=".Admin_Panel"/>
-        <activity android:name=".Feedback_confirm"/>
+        <activity android:name=".Feedback_view"/>
         <activity android:name=".ShowMaterials"></activity>
         <activity android:name=".AddMaterials" />
         <activity android:name=".BiologyActivity" />
