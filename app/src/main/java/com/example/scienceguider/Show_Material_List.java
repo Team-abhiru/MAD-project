@@ -1,25 +1,17 @@
 package com.example.scienceguider;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.icu.text.Transliterator;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.errorprone.annotations.SuppressPackageLocation;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,6 +28,7 @@ public class Show_Material_List extends AppCompatActivity {
     List<PDF_Uploader> materialList;
     TextView Mat_name;
     String name;
+    String key;
 
     DatabaseReference databaseReference;
 
@@ -62,9 +55,8 @@ public class Show_Material_List extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("Materials");
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
 
-                System.out.println(dataSnapshot);
                 for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
 
                     PDF_Uploader uploader = postSnapshot.getValue(PDF_Uploader.class);
@@ -99,13 +91,16 @@ public class Show_Material_List extends AppCompatActivity {
 
                         PDF_Uploader uploader = (PDF_Uploader) selectedSub.get(position);
 
+                        Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
+                        intent.putExtra("url", Uri.parse(uploader.getUrl()).toString());
+                        intent.putExtra("topic", uploader.topic);
+                        intent.putExtra("subject",uploader.subject);
+                        intent.putExtra("key",uploader.key);
 
-                            Intent intent = new Intent(Show_Material_List.this, ShowMaterials.class);
-                            intent.putExtra("url", Uri.parse(uploader.getUrl()).toString());
-                            intent.putExtra("topic", uploader.topic);
-                            intent.putExtra("subject",uploader.subject);
-                            startActivity(intent);
-                        }
+                        System.out.println(key);
+
+                        startActivity(intent);
+                    }
 
                 });
 

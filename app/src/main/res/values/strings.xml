@@ -107,5 +107,6 @@
     <string name="no_file_notify">File is not selected</string>
     <string name="upload">UPLOAD</string>
     <string name="material">"Material "</string>
+    <string name="addmat">ADD MATERIALS</string>
 
 </resources>
