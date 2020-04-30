@@ -220,7 +220,7 @@ public class Edit_Material_Details extends AppCompatActivity {
     }
 
     private boolean updateMaterial(String topic, final String subject, String url, String key){
-        
+
        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Materials").child(key);
 
         PDF_Uploader uploader = new PDF_Uploader(topic,subject, url,key);
@@ -252,7 +252,7 @@ public class Edit_Material_Details extends AppCompatActivity {
     });
 
         return true;
-}
+    }
 
 
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
