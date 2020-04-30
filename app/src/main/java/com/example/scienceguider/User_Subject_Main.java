@@ -2,41 +2,39 @@ package com.example.scienceguider;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import android.os.Bundle;
 import android.content.Intent;
-import android.widget.Button;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class User_Subject_Main extends AppCompatActivity {
 
     Button button1;
     Button button2;
     Button button3;
     String material;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_user__subject__main);
 
-        button1 = findViewById(R.id.btnBio);
-        button2 = findViewById(R.id.btnPhy);
-        button3 = findViewById(R.id.btnChe);
+        button1 = findViewById(R.id.btnBioUser);
+        button2 = findViewById(R.id.btnPhyUser);
+        button3 = findViewById(R.id.btnCheUser);
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        button1.setOnClickListener(new android.view.View.OnClickListener() {
+            public void onClick(android.view.View v) {
                 openBiologyActivity();
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        button2.setOnClickListener(new android.view.View.OnClickListener() {
+            public void onClick(android.view.View v) {
                 openPhysicsActivity();
             }
         });
-        button3.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View v) {
                 openBChemistryActivity();
             }
@@ -46,29 +44,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void openBiologyActivity() {
         material = "Biology";
-        Intent intent = new Intent(this, Show_Material_List.class);
+        Intent intent = new Intent(this, User_Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
     }
 
     public void openPhysicsActivity() {
         material = "Physics";
-        Intent intent = new Intent(this, Show_Material_List.class);
+        Intent intent = new Intent(this, User_Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
     }
 
     public void openBChemistryActivity() {
         material = "Chemistry";
-        Intent intent = new Intent(this, Show_Material_List.class);
+        Intent intent = new Intent(this, User_Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
     }
-
-    public void AddMaterials(View view) {
-        Intent intent = new Intent(this, AddMaterials.class);
-        startActivity(intent);
-
-    }
-
 }

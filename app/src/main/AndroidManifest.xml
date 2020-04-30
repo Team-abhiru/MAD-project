@@ -12,11 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Add_PDF">
+
+        <activity android:name=".User_Show_Material_List"/>
+        <activity android:name=".User_Show_Material" />
+        <activity android:name=".User_Subject_Main"/>
+
+        <activity android:name=".Edit_Material_Details" />
+        <activity android:name=".Show_Material_List" />
+        <activity android:name=".View" />
+       
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ShowMaterials" />
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        
+
+        <activity android:name=".Add_PDF">
         </activity>
         <activity android:name=".Reset" />
         <activity android:name=".RegisterActivity">
@@ -47,6 +65,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
