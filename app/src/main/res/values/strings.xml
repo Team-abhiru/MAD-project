@@ -35,6 +35,14 @@
         <item>Lesson 4</item>
     </string-array>
 
+    <string-array name="feedback">
+        <item>Select</item>
+        <item>Excellent</item>
+        <item>VeryGood</item>
+        <item>Good</item>
+        <item>Bad</item>
+    </string-array>
+
     <string name="Button">Biology</string>
     <string name="btnPhy">Physics</string>
     <string name="btnChe">Chemistry</string>
@@ -119,6 +127,7 @@
     <string name="topic_upload_documents">Upload Documents</string>
     <string name="upload_pdf">upload</string>
     <string name="feedbacks">Feedback</string>
+    <string name="update_feedback">Update Feedback</string>
 
 
 
