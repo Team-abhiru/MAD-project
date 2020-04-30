@@ -14,6 +14,7 @@ public class Admin_Panel extends AppCompatActivity {
     Button showUsers;
     Button showFeedback;
     Button addMaterials;
+    Button showMaterials;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class Admin_Panel extends AppCompatActivity {
         showUsers = findViewById(R.id.btn_show_users);
         showFeedback = findViewById(R.id.btn_show_feedback);
         addMaterials = findViewById(R.id.btn_add_material);
+        showMaterials = findViewById(R.id.btn_show_material);
 
         showQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +59,14 @@ public class Admin_Panel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin_Panel.this,Feedback_view.class);
+                startActivity(intent);
+            }
+        });
+
+        showMaterials.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_Panel.this,MainActivity.class);
                 startActivity(intent);
             }
         });
