@@ -1,5 +1,6 @@
 package com.example.scienceguider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -59,12 +60,13 @@ public class Feedback_view extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Feedback feedback = feedback_list.get(position);
-                showFeedback(feedback);
+
+                Intent intent = new Intent(Feedback_view.this,Feedback_manage.class);
+                intent.putExtra("FEEDBACK_ID", feedback);
+
+                startActivity(intent);
             }
         });
     }
 
-    private void showFeedback(Feedback feedback) {
-
-    }
 }

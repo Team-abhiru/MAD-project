@@ -13,6 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".Update_feedback"></activity>
+        <activity android:name=".Feedback_manage" />
+        <activity android:name=".View" />
+        <activity android:name=".Reset" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".Add_new_Quiz" />
+        <activity android:name=".Quiz_list_admin_view" />
+        <activity android:name=".Admin_Panel" />
+        <activity android:name=".Feedback_view">
+
+        </activity>
+        <activity android:name=".ShowMaterials" />
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".BiologyActivity" />
+        <activity android:name=".ChemistryActivity" />
+        <activity android:name=".PhysicsActivity" />
+        <activity android:name=".Quiz_list_user_view" />
+        <activity android:name=".Feedback_write">
+
+
         <activity android:name=".Delete_question" />
         <activity android:name=".Temp"/>
         <activity android:name=".User_Show_Material_List"/>
@@ -24,12 +45,14 @@
         <activity android:name=".ShowMaterials" />
         <activity android:name=".AddMaterials" />
         <activity android:name=".MainActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Reset" />
         <activity android:name=".Login" />
         <activity android:name=".Add_new_Quiz" android:parentActivityName=".Temp"/>
@@ -46,6 +69,7 @@
         <activity android:name=".MyRecyclerViewActivity"/>
 
         
+
     </application>
 
 </manifest>

@@ -83,13 +83,13 @@ DatabaseReference reference;
             switch (subject_selected_button) {
 
                 case 1:
-                    subject = "physics";
+                    subject = "Physics";
                     break;
                 case 2:
-                    subject = "chemistry";
+                    subject = "Chemistry";
                     break;
                 case 3:
-                    subject = "biology";
+                    subject = "Biology";
                     break;
 
             }
@@ -107,16 +107,16 @@ DatabaseReference reference;
             switch (feedback_selected_button) {
 
                 case 1:
-                    feedback = "excellent";
+                    feedback = "Excellent";
                     break;
                 case 2:
-                    feedback = "verygood";
+                    feedback = "VeryGood";
                     break;
                 case 3:
-                    feedback = "good";
+                    feedback = "Good";
                     break;
                 case 4:
-                    feedback = "bad";
+                    feedback = "Bad";
                     break;
 
             }

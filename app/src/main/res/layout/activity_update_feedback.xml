@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_update_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Feedback_manage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Subject"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/spinner_feedback_subject"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Feedback"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/spinner_feedback"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Comment"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_comment"
+            app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+
+
+            android:id="@+id/editText3"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+
+
+
+
+
+
+
+
+
+
+        ]]>
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="236dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Write"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_feedback" />
+
+        <Spinner
+            android:id="@+id/spinner_feedback_subject"
+            android:layout_width="218dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/subject_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_feedback"
+            android:layout_width="218dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:entries="@array/feedback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_feedback_subject" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/feedback_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/update_feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</LinearLayout>

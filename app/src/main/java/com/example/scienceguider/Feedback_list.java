@@ -32,10 +32,12 @@ public class Feedback_list extends ArrayAdapter {
         View listView = inflater.inflate(R.layout.feedback_view_layout,null,true);
 
         TextView textView_feedback = (TextView) listView.findViewById(R.id.id_feedback_row);
+        TextView textView_subject = (TextView) listView.findViewById(R.id.feedback_Subject);
 
         Feedback feedback = list.get(position);
 
         textView_feedback.setText(feedback.getComment());
+        textView_subject.setText(feedback.getSubject());
 
         return listView;
     }
