@@ -9,21 +9,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-
-
-
 public class User_Show_Material extends AppCompatActivity {
-
-
-
 
     ImageView edit, delete;
     TextView topic;
     String url, name, subject;
     Button pdfButton;
-
-    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
