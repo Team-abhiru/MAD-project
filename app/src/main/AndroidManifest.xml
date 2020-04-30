@@ -3,6 +3,7 @@
     package="com.example.scienceguider">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,22 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddPDF">
+        <activity android:name=".Add_PDF">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View" />
         <activity android:name=".Reset" />
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".RegisterActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".Login">
+
         </activity>
         <activity android:name=".Add_new_Quiz" />
         <activity android:name=".Quiz_list_admin_view" />
@@ -37,9 +34,10 @@
         <activity android:name=".BiologyActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Quiz_list_user_view" />
         <activity android:name=".Feedback_write" />
+        <activity android:name=".MyRecyclerViewActivity"/>
     </application>
 
 </manifest>
