@@ -9,51 +9,42 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Temp extends AppCompatActivity {
-    Button attempt_quiz;
-    Button admin_quiz_view;
-    Button add_quiz;
+    Button admin;
+    Button user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp);
 
-        attempt_quiz = (Button) findViewById(R.id.btn_attemt_quiz);
-        admin_quiz_view = (Button) findViewById(R.id.btn_admin_quiz);
-        add_quiz = (Button) findViewById(R.id.id_add_quiz);
+        admin = (Button) findViewById(R.id.btn_attemt_quiz);
+        user = (Button) findViewById(R.id.btn_admin_quiz);
 
-        admin_quiz_view.setOnClickListener(new View.OnClickListener() {
+
+        admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(android.view.View v) {
                 Log.i("app","Admin view");
-                showQuizzes();
+                showadminPlanel();
             }
         });
 
-        attempt_quiz.setOnClickListener(new View.OnClickListener() {
+        user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                attemptQuiz();
+                ShowUserView();
             }
         });
 
-        add_quiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("app","Add quiz");
-                addQuiz();
-            }
-        });
+
     }
 
-    private void addQuiz() {
-        startActivity(new Intent(Temp.this,Add_new_Quiz.class));
+
+    private void showadminPlanel() {
+        startActivity(new Intent(Temp.this,Admin_Panel.class));
     }
 
-    private void showQuizzes() {
-        startActivity(new Intent(Temp.this,Quiz_list_admin_view.class));
-    }
-
-    private void attemptQuiz() {
-        startActivity(new Intent(Temp.this, Attempt_quiz.class));
+    private void ShowUserView() {
+        startActivity(new Intent(Temp.this, User_Subject_Main.class));
     }
 }

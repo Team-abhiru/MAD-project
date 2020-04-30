@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:text="@string/attempt_quiz"
+        android:text="Admin"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="86dp" />
 
@@ -22,16 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_attemt_quiz"
         android:layout_centerHorizontal="true"
-        android:text="@string/admin_quiz"
+        android:text="User"
         android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/id_add_quiz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add quiz"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/btn_attemt_quiz"
-        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>

@@ -10,8 +10,8 @@
     <Button
         android:id="@+id/btnBioUser"
         android:layout_width="413dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="52dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
         android:background="#FC429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/btnPhyUser"
         android:layout_width="413dp"
-        android:layout_height="140dp"
+        android:layout_height="120dp"
         android:background="#FCB53A3A"
         android:text="@string/btnPhy"
         android:textColor="#FFFFFF"
@@ -40,7 +40,7 @@
     <Button
         android:id="@+id/btnCheUser"
         android:layout_width="413dp"
-        android:layout_height="140dp"
+        android:layout_height="120dp"
         android:background="#FC1C2E65"
         android:text="@string/btnChe"
         android:textColor="#FFFFFF"

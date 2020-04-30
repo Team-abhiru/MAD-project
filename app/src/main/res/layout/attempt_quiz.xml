@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="@drawable/background"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:keepScreenOn="false"
+    android:overScrollMode="always"
+    android:padding="16dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="horizontal"
     tools:context=".Attempt_quiz">
 
     <TextView
@@ -20,17 +27,15 @@
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
-       android:layout_below="@id/text_View_topic_quizTime"
+        android:layout_below="@id/text_View_topic_quizTime"
         android:layout_marginTop="20dp"
-        android:background="@android:color/background_dark"
-         />
+        android:background="@android:color/background_dark" />
 
     <View
         android:id="@+id/divider2"
@@ -40,8 +45,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/holo_orange_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/id_subject"
@@ -49,9 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/divider"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:text="@string/quiz_subject"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/id_score"
@@ -61,27 +65,27 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/correct_ans"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/id_question_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quiz_number"
-        android:textSize="20sp"
         android:layout_below="@id/divider"
         android:layout_marginStart="230dp"
         android:layout_marginTop="10dp"
-         />
+        android:text="@string/quiz_number"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/id_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/id_subject"
-        android:textSize="40sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/counter"/>
+        android:text="@string/counter"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/id_question"
@@ -89,39 +93,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/divider2"
         android:layout_marginTop="10dp"
-        android:textSize="18sp"
-        android:text="This is question\nThis is question"/>
+        android:text="This is question\nThis is question"
+        android:textSize="18sp" />
 
     <RadioGroup
         android:id="@+id/id_radio_group"
-        android:layout_below="@id/id_question"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-        android:id="@+id/id_answer1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Option1"
-        android:textSize="18sp"
-        />
+        android:layout_below="@id/id_question"
+        android:layout_marginTop="1dp">
+
+        <RadioButton
+            android:id="@+id/id_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option1"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/id_answer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Option2"
-            android:textSize="18sp"
-            />
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/id_answer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Option3"
-            android:textSize="18sp"
-            />
+            android:textSize="18sp" />
     </RadioGroup>
 
     <TextView
@@ -129,17 +130,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/id_radio_group"
-        android:textSize="18sp"
-        android:textColor="@color/delete_red"
         android:textAlignment="center"
-    />
+        android:textColor="@color/delete_red"
+        android:textSize="18sp" />
+
     <Button
         android:id="@+id/id_btn_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/id_review"
-        android:text="Confirm Answer"
-        android:textSize="18sp"
         android:background="@android:color/holo_green_dark"
-        android:layout_marginTop="20dp"/>
+        android:text="Confirm Answer"
+        android:textSize="18sp" />
+
 </RelativeLayout>

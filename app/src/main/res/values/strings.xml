@@ -128,8 +128,7 @@
     <string name="upload_pdf">upload</string>
     <string name="feedbacks">Feedback</string>
     <string name="update_feedback">Update Feedback</string>
-
-
+    <string name="show_materials">Show Materials</string>
 
 
 </resources>
