@@ -1,6 +1,8 @@
 package com.example.scienceguider;
 
-public class Feedback {
+import java.io.Serializable;
+
+public class Feedback implements Serializable {
 
     private String comment;
     private String subject;
