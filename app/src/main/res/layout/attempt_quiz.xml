@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".Attempt_quiz">
+
+    <TextView
+        android:id="@+id/text_View_topic_quizTime"
+        android:layout_width="380dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:background="#B90C81"
+        android:fontFamily="casual"
+        android:text="@string/topic_quiz_user_view"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+       android:layout_below="@id/text_View_topic_quizTime"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_dark"
+         />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/id_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/quiz_subject"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/correct_ans"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_number"
+        android:textSize="20sp"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="10dp"
+         />
+    <TextView
+        android:id="@+id/id_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_subject"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/counter"/>
+
+    <TextView
+        android:id="@+id/id_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="This is question\nThis is question"/>
+
+    <RadioGroup
+        android:id="@+id/id_radio_group"
+        android:layout_below="@id/id_question"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+        android:id="@+id/id_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option1"
+        android:textSize="18sp"
+        />
+
+        <RadioButton
+            android:id="@+id/id_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option2"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/id_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option3"
+            android:textSize="18sp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/id_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_radio_group"
+        android:textSize="18sp"
+        android:textColor="@color/delete_red"
+        android:textAlignment="center"
+    />
+    <Button
+        android:id="@+id/id_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_review"
+        android:text="Confirm Answer"
+        android:textSize="18sp"
+        android:background="@android:color/holo_green_dark"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
