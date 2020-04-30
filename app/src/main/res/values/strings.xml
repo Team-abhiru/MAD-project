@@ -14,11 +14,11 @@
     <string name="topic_add_question">Add Question</string>
     <string name="topic_quiz_list">Questions</string>
     <string name="topic_quiz_user_view">Quiz Time</string>
-    <string name="correct_ans">Marks : 0/4</string>
+    <string name="correct_ans">Marks : 0</string>
     <string name="quiz_subject">Physics</string>
-    <string name="quiz_topic">Electricity</string>
+    <string name="quiz_number">Question : 1</string>
     <string name="topic_add_questions">Add Questions</string>
-    <string name="btn_browse">Browse</string>
+    <string name="btn_save">Save</string>
 
     <string-array name="subject_list">
         <item>Subject</item>
@@ -66,6 +66,19 @@
     <string name="non" />
     <string name="add">Add</string>
     <string name="cont">Content</string>
+    <string name="editMat">Edit Materials</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="browse">Browse</string>
+
+    <string-array name="subjects">
+        <item>Biology</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
+
     <string name="topic_feedback_write">Place Your Feedback Here..</string>
     <string name="btn_send_feedback">Send Feedback</string>
     <string name="choose_subject">Subject</string>
@@ -95,10 +108,28 @@
     <string name="hint_confirm_Password">Confirm Password</string>
     <string name="btn_reset">Reset</string>
     <string name="user_id">User ID</string>
+    <string name="admin_quiz">Admin quiz</string>
+    <string name="hint_write_question">Write question here</string>
+    <string name="counter">00:30</string>
+    <string name="select_subject">Select subject</string>
+    <string name="select_topic">Select topic</string>
+    <string name="btn_update">Update</string>
+    <string name="question">Question</string>
+    <string name="btn_delete">Delete</string>
+    <string name="answer">Answer</string>
     <string name="not_registered">Not_Registered?</string>
     <string name="register">REGISTER</string>
+    <string name="attempt_quiz">Attempt Quiz</string>
+    <string name="no_file_notify">File is not selected</string>
+    <string name="upload">UPLOAD</string>
+    <string name="material">"Material "</string>
+    <string name="addmat">ADD MATERIALS</string>
+    <string name="topic_upload_documents">Upload Documents</string>
+    <string name="upload_pdf">upload</string>
     <string name="feedbacks">Feedback</string>
     <string name="update_feedback">Update Feedback</string>
+
+
 
 
 </resources>

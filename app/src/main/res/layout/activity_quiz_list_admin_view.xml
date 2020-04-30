@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Quiz_list_admin_view">
 
     <TextView
@@ -26,17 +26,18 @@
 
     <ListView
         android:id="@+id/id_quiz_list_admin"
-        android:layout_width="400dp"
-        android:layout_height="465dp"
+        android:layout_width="394dp"
+        android:layout_height="381dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="1dp"
         android:background="#31918D8D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552">
+        app:layout_constraintVertical_bias="0.060000002">
 
     </ListView>
 
@@ -45,10 +46,10 @@
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginTop="76dp"
-        android:textAlignment="center"
         android:background="@android:color/darker_gray"
         android:entries="@array/subject_list"
         android:popupBackground="@android:color/background_light"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/id_topic_list"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +60,10 @@
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginTop="76dp"
-        android:textAlignment="center"
         android:background="@android:color/darker_gray"
         android:entries="@array/topics"
         android:popupBackground="@color/cardview_light_background"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/id_subject_list"

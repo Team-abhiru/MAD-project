@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Material_Details">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".AddMaterials">
+
+        <TextView
+            android:id="@+id/edit_notification"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/no_file_notify"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_btn_edit_browse" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/material"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <Button
+            android:id="@+id/id_btn_edit_browse"
+            android:layout_width="107dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="150dp"
+            android:text="@string/browse"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <Spinner
+            android:id="@+id/spinner_subject"
+            android:layout_width="232dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="76dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/choose_subject"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="381dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            android:background="#B90C81"
+            android:fontFamily="casual"
+            android:text="@string/addMa"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="56dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="96dp"
+            android:text="@string/MatTopic"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tp_name"
+            android:layout_width="229dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="44dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType=""
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/btnCancel"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_update"
+            app:layout_constraintStart_toEndOf="@+id/btn_update"
+            app:layout_constraintTop_toTopOf="@+id/btn_update" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/update"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_notification" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="205dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,54 +8,29 @@
     android:padding="16dp"
     tools:context=".Add_new_Quiz">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="380dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:background="#B90C81"
-        android:fontFamily="casual"
-        android:text="@string/topic_add_questions"
-        android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select_subject"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select_topic"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView7"-->
+<!--        android:layout_width="380dp"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="#B90C81"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:text="@string/topic_add_questions"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/cardview_light_background"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/edit_topic"
         android:layout_width="140dp"
         android:layout_height="45dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:background="?attr/colorButtonNormal"
         android:entries="@array/topics"
         android:textAlignment="center"
@@ -65,10 +40,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/edit_subject"
         android:layout_width="140dp"
         android:layout_height="45dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="4dp"
         android:background="?attr/colorButtonNormal"
         android:entries="@array/subject_list"
         android:textAlignment="center"
@@ -78,11 +53,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/id_btn_save"
+        android:id="@+id/id_btn_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:background="@android:color/holo_green_dark"
+        android:text="@string/btn_update"
         android:textAllCaps="false"
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textSize="18sp"
@@ -91,13 +67,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/btn_save" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/question"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/id_write_question"
+        android:id="@+id/id_edit_write_question"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="250dp"
         android:ems="10"
         android:gravity="start|top"
@@ -108,10 +95,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <EditText
-        android:id="@+id/text_view_option1"
+        android:id="@+id/text_view_edit_option1"
         android:layout_width="378dp"
         android:layout_height="43dp"
         android:hint="Answer 1"
@@ -119,11 +106,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_write_question"
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
-        android:id="@+id/text_view_option2"
+        android:id="@+id/text_view_edit_option2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Answer 2"
@@ -131,28 +118,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/text_view_option3"
+        android:id="@+id/text_view_edit_option3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Answer 3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/id_add_answer"
+        android:id="@+id/id_edit_add_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="@string/answer"
+        android:hint="Answer"
         android:inputType="number"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -160,7 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.scienceguider">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Update_feedback"></activity>
         <activity android:name=".Feedback_manage" />
         <activity android:name=".View" />
@@ -26,15 +30,46 @@
         <activity android:name=".BiologyActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".PhysicsActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".Quiz_list_user_view" />
         <activity android:name=".Feedback_write">
+
+
+        <activity android:name=".Delete_question" />
+        <activity android:name=".Temp"/>
+        <activity android:name=".User_Show_Material_List"/>
+        <activity android:name=".User_Show_Material" />
+        <activity android:name=".User_Subject_Main"/>
+        <activity android:name=".Edit_Material_Details" />
+        <activity android:name=".Show_Material_List" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ShowMaterials" />
+        <activity android:name=".AddMaterials" />
+        <activity android:name=".MainActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Reset" />
+        <activity android:name=".Login" />
+        <activity android:name=".Add_new_Quiz" android:parentActivityName=".Temp"/>
+        <activity android:name=".Quiz_list_admin_view" android:parentActivityName=".Temp" />
+        <activity android:name=".Admin_Panel" />
+        <activity android:name=".Add_PDF">
+        </activity>
+        <activity android:name=".Feedback_view"/>
+<!--        <activity android:name=".BiologyActivity" />-->
+<!--        <activity android:name=".ChemistryActivity" />-->
+<!--        <activity android:name=".PhysicsActivity" />-->
+        <activity android:name=".Attempt_quiz" android:parentActivityName=".Temp"/>
+        <activity android:name=".Feedback_write" />
+        <activity android:name=".MyRecyclerViewActivity"/>
+
+        
+
     </application>
 
 </manifest>
