@@ -90,6 +90,7 @@
     <string name="not_registered">Not_Registered?</string>
     <string name="register">REGISTER</string>
     <string name="topic_upload_documents">Upload Documents</string>
+    <string name="upload_pdf">upload</string>
 
 
 </resources>
