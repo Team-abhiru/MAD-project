@@ -76,20 +76,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/add"
-        android:layout_width="256dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:onClick="AddMaterials"
-        android:text="@string/addmat"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnChe"
-        tools:ignore="OnClick" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

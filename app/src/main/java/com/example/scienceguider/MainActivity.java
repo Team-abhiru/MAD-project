@@ -1,12 +1,11 @@
 package com.example.scienceguider;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
-import android.os.Bundle;
 import android.content.Intent;
-import android.widget.Button;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.btnPhy);
         button3 = findViewById(R.id.btnChe);
 
-
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openBiologyActivity();
@@ -41,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 openBChemistryActivity();
             }
         });
+
 
     }
 
@@ -63,12 +62,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Show_Material_List.class);
         intent.putExtra("Mat_name", material);
         startActivity(intent);
-    }
-
-    public void AddMaterials(View view) {
-        Intent intent = new Intent(this, AddMaterials.class);
-        startActivity(intent);
-
     }
 
 }

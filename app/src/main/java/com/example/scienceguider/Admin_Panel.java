@@ -1,11 +1,11 @@
 package com.example.scienceguider;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Admin_Panel extends AppCompatActivity {
 
@@ -41,6 +41,22 @@ public class Admin_Panel extends AppCompatActivity {
 
                 Intent intent = new Intent(Admin_Panel.this,Add_new_Quiz.class);
 
+                startActivity(intent);
+            }
+        });
+
+        addMaterials.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_Panel.this,AddMaterials.class);
+                startActivity(intent);
+            }
+        });
+
+        showFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_Panel.this,Feedback_view.class);
                 startActivity(intent);
             }
         });
