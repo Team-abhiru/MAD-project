@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "460602062730-t5k39ubomk54rqj334b4o5v4q9lf1tav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scienceguider",
+            "certificate_hash": "a10c862e13feb35768e510cf60f3a7965c158d17"
+          }
+        },
+        {
+          "client_id": "460602062730-ukho65pbr9svu4rqvoou20jtc0o6ovro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scienceguider",
+            "certificate_hash": "15612e6e8a48710e6c0d6cbe654e485afabceaf2"
+          }
+        },
+        {
           "client_id": "460602062730-oeqndas3vellpisd3hub5e8t5cilikps.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

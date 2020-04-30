@@ -4,19 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".MainActivity"
     android:background="@drawable/maths"
-    android:fadeScrollbars="true"
-    android:hapticFeedbackEnabled="false"
-    android:scrollbarFadeDuration="200"
-    app:layout_constraintBaseline_creator="@android:integer/config_mediumAnimTime" >
+    tools:context=".User_Subject_Main">
 
     <Button
-        android:id="@+id/btnBio"
+        android:id="@+id/btnBioUser"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:background="#FC429E45"
         android:text="@string/Button"
         android:textColor="#FFFFFF"
@@ -25,12 +20,11 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeHeaderUser" />
 
     <Button
-        android:id="@+id/btnPhy"
+        android:id="@+id/btnPhyUser"
         android:layout_width="413dp"
         android:layout_height="140dp"
         android:background="#FCB53A3A"
@@ -41,10 +35,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBio" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBioUser" />
 
     <Button
-        android:id="@+id/btnChe"
+        android:id="@+id/btnCheUser"
         android:layout_width="413dp"
         android:layout_height="140dp"
         android:background="#FC1C2E65"
@@ -55,13 +49,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPhy" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPhyUser" />
 
     <TextView
-        android:id="@+id/HomeHeader"
+        android:id="@+id/HomeHeaderUser"
         android:layout_width="225dp"
         android:layout_height="33dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:background="#FFFFFF"
         android:freezesText="false"
         android:text="@string/HomeHead"
@@ -76,20 +70,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/add"
-        android:layout_width="256dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:onClick="AddMaterials"
-        android:text="@string/addmat"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnChe"
-        tools:ignore="OnClick" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
