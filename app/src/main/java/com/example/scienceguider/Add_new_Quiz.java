@@ -73,6 +73,11 @@ public class Add_new_Quiz extends AppCompatActivity {
                     refDB.child(questionID).setValue(questionObj);
 
                     Toast.makeText(Add_new_Quiz.this,"New question is added",Toast.LENGTH_SHORT).show();
+                     add_question.setText("");
+                     add_answer.setText("");
+                     answer1.setText("");
+                     answer2.setText("");
+                     answer3.setText("");
                 }
 
             }

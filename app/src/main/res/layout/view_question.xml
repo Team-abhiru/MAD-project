@@ -23,26 +23,24 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:text="@string/ans1"
         android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_show_option1"
         app:layout_constraintEnd_toStartOf="@+id/textView_show_option1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:text="@string/ans2"
         android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_show_option2"
         app:layout_constraintEnd_toStartOf="@+id/textView_show_option2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView15"
@@ -74,33 +72,35 @@
         android:id="@+id/btn_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="100dp"
+        android:background="#E31717"
         android:text="@string/btn_delete"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_show_answer" />
 
     <Button
         android:id="@+id/btn_show_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
         android:layout_marginEnd="200dp"
         android:layout_marginBottom="100dp"
+        android:background="#4CAF50"
         android:text="@string/btn_update"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView_show_question"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="cjgfjdfjdfjdfjgjgfnjgfjgf"
@@ -113,10 +113,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
         android:text="TextView"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
-        app:layout_constraintStart_toEndOf="@+id/textView13" />
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView_show_question" />
 
     <TextView
         android:id="@+id/textView_show_option2"

@@ -176,7 +176,7 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         edit_option1.setText(questionObj.getOption1());
         edit_option2.setText(questionObj.getOption2());
         edit_option3.setText(questionObj.getOption3());
-//        edit_Answer.setText();
+        edit_Answer.setText(Integer.toString(questionObj.getAnswer()));
 
         btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -242,7 +242,7 @@ public class Quiz_list_admin_view extends AppCompatActivity {
         view_option1.setText(question.getOption1());
         view_option2.setText(question.getOption2());
         view_option3.setText(question.getOption3());
-//        view_Answer.setText(question.getAnswer());
+        view_Answer.setText(Integer.toString(question.getAnswer()));
 
         btn_update.setOnClickListener(new View.OnClickListener() {
             @Override

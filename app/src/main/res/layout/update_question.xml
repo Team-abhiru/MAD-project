@@ -25,37 +25,11 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select_subject"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select_topic"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027" />
-
     <Spinner
         android:id="@+id/edit_topic"
         android:layout_width="140dp"
         android:layout_height="45dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:background="?attr/colorButtonNormal"
         android:entries="@array/topics"
@@ -69,8 +43,7 @@
         android:id="@+id/edit_subject"
         android:layout_width="140dp"
         android:layout_height="45dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="4dp"
         android:background="?attr/colorButtonNormal"
         android:entries="@array/subject_list"
         android:textAlignment="center"
@@ -85,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:background="@android:color/holo_green_dark"
+        android:text="@string/btn_update"
         android:textAllCaps="false"
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textSize="18sp"
@@ -93,12 +67,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/btn_update" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option3" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="50dp"
         android:text="@string/question"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +84,7 @@
         android:id="@+id/id_edit_write_question"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="250dp"
         android:ems="10"
         android:gravity="start|top"
@@ -132,8 +106,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_write_question"
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
         android:id="@+id/text_view_edit_option2"
@@ -144,8 +118,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/text_view_edit_option3"
@@ -155,8 +129,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/id_edit_add_answer"
@@ -173,7 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_edit_option3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
